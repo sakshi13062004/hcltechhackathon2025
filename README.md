@@ -925,6 +925,72 @@ def decrypt_address(address_encrypted):
 - **Transaction Limits**: Daily and per-transaction limits
 - **Pattern Analysis**: Unusual behavior detection
 
+## ⚠️ Edge Cases & Solutions
+
+### Authentication Edge Cases
+- **Token expires during upload** → Auto-refresh with refresh token and retry request
+- **Multiple device login** → Invalidate old refresh tokens, allow single active session
+- **Concurrent login attempts** → Redis lock prevents race conditions with 30-second timeout
+- **Invalid refresh token** → Force re-authentication, clear all stored tokens
+
+### Registration Edge Cases
+- **Duplicate email/phone** → Return 409 conflict with specific field error message
+- **Invalid SSN format** → Validate 9-digit format, reject common test patterns (000-00-0000)
+- **Age exactly 18** → Handle leap year edge case, verify exact birth date calculation
+- **Future birth date** → Reject with validation error, log suspicious activity
+- **Pending registration exists** → Return "Registration in progress" message, don't create duplicate
+
+### KYC Upload Edge Cases
+- **Large file (>10MB)** → Reject with size limit error, suggest file compression
+- **Malicious file upload** → Scan MIME type, validate extensions, reject executables
+- **Concurrent document upload** → Database lock prevents duplicate document types
+- **Network interruption** → Implement resumable uploads with chunk tracking
+- **Invalid file format** → Validate against allowed types (PDF, JPG, PNG, DOC)
+- **Corrupted encrypted data** → Log security event, request re-upload with error message
+
+### Admin Review Edge Cases
+- **Multiple admins review same KYC** → Database lock with select_for_update prevents race conditions
+- **Admin account deleted during review** → Reassign pending reviews to available admin
+- **KYC already processed** → Return "Already reviewed" error, show current status
+- **Admin permission revoked** → Revoke access immediately, reassign pending reviews
+
+### Rate Limiting Edge Cases
+- **Rate limit bypass with multiple IPs** → Track user across IPs, flag suspicious activity
+- **Rate limit reset while blocked** → Check block_until timestamp, clear if expired
+- **Redis connection loss** → Fallback to database rate limiting, log degradation
+- **Progressive penalty escalation** → Increase lockout duration with each violation (1min→5min→30min→24hr)
+
+### Data Security Edge Cases
+- **Encryption key rotation** → Gradual re-encryption with new key, maintain old key for decryption
+- **Corrupted encrypted data** → Log security event, request data re-upload
+- **Database connection loss** → Return "System unavailable" error, retry mechanism
+- **Audit log tampering** → Calculate and store hash, verify integrity periodically
+
+### System Failure Edge Cases
+- **Database timeout** → Implement connection pooling, retry with exponential backoff
+- **Redis failure** → Fallback to database operations, degrade gracefully
+- **File storage failure** → Retry upload, notify user of temporary issue
+- **Memory exhaustion** → Implement file streaming, limit concurrent uploads
+
+### User Experience Edge Cases
+- **Browser refresh during registration** → Store progress in session, redirect to appropriate step
+- **Slow network during upload** → Show progress bar, implement timeout with retry option
+- **Form data loss** → Auto-save draft data, restore on page reload
+- **Session timeout** → Extend session for active uploads, warn before expiration
+
+### Compliance Edge Cases
+- **Data retention expiration** → Auto-delete expired rejected KYC documents after 7 years
+- **Audit log storage full** → Archive old logs, maintain retention policy compliance
+- **Regulatory requirement change** → Update validation rules, notify affected users
+- **GDPR data deletion request** → Anonymize data, maintain audit trail for compliance
+
+### Error Handling Strategy
+- **Validation errors** → Return specific field errors with correction suggestions
+- **Authentication errors** → Clear session data, redirect to login with error message
+- **Permission errors** → Log unauthorized access attempt, return generic "Access denied"
+- **System errors** → Log detailed error, return user-friendly "Please try again" message
+- **Unexpected errors** → Log with stack trace, return generic error, alert administrators
+
 ## 🚀 Getting Started
 
 ### Prerequisites

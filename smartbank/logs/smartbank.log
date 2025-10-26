@@ -1,0 +1,692 @@
+INFO 2025-10-26 12:46:40,590 utils 16424 20016 Created role: CUSTOMER
+INFO 2025-10-26 12:46:40,593 utils 16424 20016 Created role: BANK_ADMIN
+INFO 2025-10-26 12:46:40,594 utils 16424 20016 Created role: AUDITOR
+INFO 2025-10-26 12:46:57,899 autoreload 11824 18492 Watching for file changes with StatReloader
+INFO 2025-10-26 12:50:26,780 autoreload 11824 18492 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\smartbank\settings.py changed, reloading.
+INFO 2025-10-26 12:50:28,788 autoreload 12016 22672 Watching for file changes with StatReloader
+INFO 2025-10-26 12:50:35,752 autoreload 12016 22672 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\smartbank\settings.py changed, reloading.
+INFO 2025-10-26 12:50:40,795 autoreload 18676 22124 Watching for file changes with StatReloader
+INFO 2025-10-26 12:51:14,234 autoreload 18676 22124 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\smartbank\settings.py changed, reloading.
+INFO 2025-10-26 12:51:15,919 autoreload 22512 22288 Watching for file changes with StatReloader
+INFO 2025-10-26 12:53:03,236 autoreload 22964 11604 Watching for file changes with StatReloader
+INFO 2025-10-26 12:53:18,803 autoreload 22964 11604 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\smartbank\settings.py changed, reloading.
+INFO 2025-10-26 12:53:20,496 autoreload 2544 15628 Watching for file changes with StatReloader
+INFO 2025-10-26 12:54:28,077 autoreload 2544 15628 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\smartbank\settings.py changed, reloading.
+INFO 2025-10-26 12:54:29,477 autoreload 22840 21856 Watching for file changes with StatReloader
+INFO 2025-10-26 12:55:57,815 autoreload 22840 21856 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\smartbank\settings.py changed, reloading.
+INFO 2025-10-26 12:56:00,345 autoreload 22200 1832 Watching for file changes with StatReloader
+INFO 2025-10-26 12:56:07,086 autoreload 22200 1832 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\smartbank\settings.py changed, reloading.
+INFO 2025-10-26 12:56:08,569 autoreload 22932 21812 Watching for file changes with StatReloader
+INFO 2025-10-26 12:56:18,217 autoreload 22932 21812 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\smartbank\settings.py changed, reloading.
+INFO 2025-10-26 12:56:20,187 autoreload 22928 23268 Watching for file changes with StatReloader
+INFO 2025-10-26 12:56:24,926 autoreload 22928 23268 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\smartbank\urls.py changed, reloading.
+INFO 2025-10-26 12:56:27,304 autoreload 22616 1832 Watching for file changes with StatReloader
+INFO 2025-10-26 12:56:33,248 autoreload 22616 1832 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\registration\views.py changed, reloading.
+INFO 2025-10-26 12:56:35,475 autoreload 15296 22896 Watching for file changes with StatReloader
+INFO 2025-10-26 12:56:40,788 autoreload 15296 22896 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\registration\views.py changed, reloading.
+INFO 2025-10-26 12:56:43,086 autoreload 7636 9912 Watching for file changes with StatReloader
+INFO 2025-10-26 12:56:47,257 autoreload 7636 9912 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\registration\views.py changed, reloading.
+INFO 2025-10-26 12:56:49,495 autoreload 18828 23492 Watching for file changes with StatReloader
+INFO 2025-10-26 12:56:56,600 autoreload 18828 23492 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\registration\views.py changed, reloading.
+INFO 2025-10-26 12:56:59,046 autoreload 11136 22220 Watching for file changes with StatReloader
+INFO 2025-10-26 12:57:32,591 autoreload 11136 22220 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\registration\views.py changed, reloading.
+INFO 2025-10-26 12:57:34,682 autoreload 2888 14424 Watching for file changes with StatReloader
+WARNING 2025-10-26 12:58:13,236 log 2888 23448 Bad Request: /api/auth/register/
+WARNING 2025-10-26 12:58:17,392 log 2888 23448 Bad Request: /api/auth/register/
+INFO 2025-10-26 12:59:26,390 autoreload 7636 21516 Watching for file changes with StatReloader
+ERROR 2025-10-26 13:05:01,785 views 2888 14064 Registration error: 'EncryptionService' object has no attribute 'check_duplicate_ssn'
+ERROR 2025-10-26 13:05:01,786 log 2888 14064 Internal Server Error: /api/auth/register/
+INFO 2025-10-26 13:06:02,394 autoreload 7636 21516 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\smartbank\settings.py changed, reloading.
+INFO 2025-10-26 13:06:02,468 autoreload 2888 14424 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\smartbank\settings.py changed, reloading.
+INFO 2025-10-26 13:06:05,270 autoreload 19944 21556 Watching for file changes with StatReloader
+INFO 2025-10-26 13:06:10,638 autoreload 16924 13856 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\smartbank\celery.py changed, reloading.
+INFO 2025-10-26 13:06:10,797 autoreload 19944 21556 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\smartbank\celery.py changed, reloading.
+INFO 2025-10-26 13:06:12,804 autoreload 9156 8264 Watching for file changes with StatReloader
+INFO 2025-10-26 13:06:12,891 autoreload 22796 20764 Watching for file changes with StatReloader
+INFO 2025-10-26 13:06:16,854 autoreload 9156 8264 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\registration\tasks.py changed, reloading.
+INFO 2025-10-26 13:06:16,857 autoreload 22796 20764 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\registration\tasks.py changed, reloading.
+INFO 2025-10-26 13:06:19,130 autoreload 9700 16876 Watching for file changes with StatReloader
+INFO 2025-10-26 13:06:19,157 autoreload 1984 19740 Watching for file changes with StatReloader
+INFO 2025-10-26 13:06:26,811 autoreload 1984 19740 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\registration\tasks.py changed, reloading.
+INFO 2025-10-26 13:06:26,910 autoreload 9700 16876 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\registration\tasks.py changed, reloading.
+INFO 2025-10-26 13:06:29,578 autoreload 308 18852 Watching for file changes with StatReloader
+INFO 2025-10-26 13:06:29,726 autoreload 20168 22764 Watching for file changes with StatReloader
+INFO 2025-10-26 13:07:13,111 autoreload 308 18852 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\smartbank\settings.py changed, reloading.
+INFO 2025-10-26 13:07:13,131 autoreload 20168 22764 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\smartbank\settings.py changed, reloading.
+INFO 2025-10-26 13:07:15,422 autoreload 22960 15696 Watching for file changes with StatReloader
+INFO 2025-10-26 13:07:15,425 autoreload 23540 21564 Watching for file changes with StatReloader
+INFO 2025-10-26 13:07:59,531 autoreload 22972 23416 Watching for file changes with StatReloader
+WARNING 2025-10-26 13:08:00,827 utils 23540 8648 Security event logged: RATE_LIMIT_EXCEEDED - Rate limit exceeded for /api/auth/register/
+WARNING 2025-10-26 13:08:00,827 log 23540 8648 Too Many Requests: /api/auth/register/
+WARNING 2025-10-26 13:08:13,015 utils 23540 8648 Security event logged: RATE_LIMIT_EXCEEDED - Rate limit exceeded for /api/auth/register/
+WARNING 2025-10-26 13:08:13,018 log 23540 8648 Too Many Requests: /api/auth/register/
+WARNING 2025-10-26 13:09:20,116 utils 23540 8648 Security event logged: RATE_LIMIT_EXCEEDED - Rate limit exceeded for /api/auth/register/
+WARNING 2025-10-26 13:09:20,119 log 23540 8648 Too Many Requests: /api/auth/register/
+WARNING 2025-10-26 13:09:57,157 utils 23540 8648 Security event logged: RATE_LIMIT_EXCEEDED - Rate limit exceeded for /api/auth/register/
+WARNING 2025-10-26 13:09:57,158 log 23540 8648 Too Many Requests: /api/auth/register/
+INFO 2025-10-26 13:11:05,014 autoreload 23540 21564 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\smartbank\settings.py changed, reloading.
+INFO 2025-10-26 13:11:05,148 autoreload 22972 23416 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\smartbank\settings.py changed, reloading.
+INFO 2025-10-26 13:11:08,341 autoreload 20944 24120 Watching for file changes with StatReloader
+INFO 2025-10-26 13:11:08,354 autoreload 13848 2104 Watching for file changes with StatReloader
+INFO 2025-10-26 13:11:13,478 autoreload 20944 24120 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\registration\middleware.py changed, reloading.
+INFO 2025-10-26 13:11:13,615 autoreload 13848 2104 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\registration\middleware.py changed, reloading.
+INFO 2025-10-26 13:11:16,410 autoreload 23856 22852 Watching for file changes with StatReloader
+INFO 2025-10-26 13:11:16,415 autoreload 21644 9832 Watching for file changes with StatReloader
+INFO 2025-10-26 13:11:19,633 autoreload 21644 9832 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\smartbank\settings.py changed, reloading.
+INFO 2025-10-26 13:11:19,683 autoreload 23856 22852 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\smartbank\settings.py changed, reloading.
+INFO 2025-10-26 13:11:22,349 autoreload 24204 24164 Watching for file changes with StatReloader
+INFO 2025-10-26 13:11:22,372 autoreload 23992 14064 Watching for file changes with StatReloader
+INFO 2025-10-26 13:11:49,466 autoreload 23992 14064 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\smartbank\settings.py changed, reloading.
+INFO 2025-10-26 13:11:49,687 autoreload 24204 24164 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\smartbank\settings.py changed, reloading.
+INFO 2025-10-26 13:11:52,869 autoreload 23592 23648 Watching for file changes with StatReloader
+INFO 2025-10-26 13:11:52,923 autoreload 12112 21640 Watching for file changes with StatReloader
+INFO 2025-10-26 13:12:02,264 autoreload 12112 21640 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\smartbank\settings.py changed, reloading.
+INFO 2025-10-26 13:12:02,294 autoreload 23592 23648 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\smartbank\settings.py changed, reloading.
+INFO 2025-10-26 13:12:05,794 autoreload 24096 22864 Watching for file changes with StatReloader
+INFO 2025-10-26 13:12:05,799 autoreload 24080 23336 Watching for file changes with StatReloader
+ERROR 2025-10-26 13:12:45,948 views 24080 24212 Registration error: 'EncryptionService' object has no attribute 'check_duplicate_ssn'
+ERROR 2025-10-26 13:12:45,951 log 24080 24212 Internal Server Error: /api/auth/register/
+ERROR 2025-10-26 13:13:02,380 views 24080 24212 Registration error: 'EncryptionService' object has no attribute 'check_duplicate_ssn'
+ERROR 2025-10-26 13:13:02,381 log 24080 24212 Internal Server Error: /api/auth/register/
+INFO 2025-10-26 13:14:17,964 autoreload 24096 22864 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\smartbank\celery.py changed, reloading.
+INFO 2025-10-26 13:14:17,970 autoreload 24080 23336 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\smartbank\celery.py changed, reloading.
+INFO 2025-10-26 13:14:20,104 autoreload 23640 22336 Watching for file changes with StatReloader
+INFO 2025-10-26 13:14:20,180 autoreload 16876 22656 Watching for file changes with StatReloader
+INFO 2025-10-26 13:14:30,452 autoreload 23640 22336 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\smartbank\settings.py changed, reloading.
+INFO 2025-10-26 13:14:30,552 autoreload 16876 22656 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\smartbank\settings.py changed, reloading.
+INFO 2025-10-26 13:14:32,998 autoreload 22992 23464 Watching for file changes with StatReloader
+INFO 2025-10-26 13:14:33,465 autoreload 23820 8736 Watching for file changes with StatReloader
+INFO 2025-10-26 13:15:13,576 autoreload 23820 8736 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\smartbank\celery.py changed, reloading.
+INFO 2025-10-26 13:15:13,683 autoreload 22992 23464 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\smartbank\settings.py changed, reloading.
+INFO 2025-10-26 13:15:16,431 autoreload 23836 24160 Watching for file changes with StatReloader
+INFO 2025-10-26 13:15:16,633 autoreload 8008 23416 Watching for file changes with StatReloader
+ERROR 2025-10-26 13:15:25,688 views 23836 23396 Registration error: 'EncryptionService' object has no attribute 'check_duplicate_ssn'
+ERROR 2025-10-26 13:15:25,689 log 23836 23396 Internal Server Error: /api/auth/register/
+WARNING 2025-10-26 13:15:38,431 warnings 18716 24548 C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py:1022: UserWarning: Soft timeouts are not supported: on this platform: It does not have the SIGUSR1 signal.
+  warnings.warn(UserWarning(
+
+WARNING 2025-10-26 13:15:38,510 warnings 18716 24548 C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+INFO 2025-10-26 13:15:38,523 connection 18716 24548 Connected to redis://localhost:6379/0
+WARNING 2025-10-26 13:15:38,524 warnings 18716 24548 C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+INFO 2025-10-26 13:15:38,534 mingle 18716 24548 mingle: searching for neighbors
+INFO 2025-10-26 13:15:39,556 mingle 18716 24548 mingle: all alone
+WARNING 2025-10-26 13:15:39,576 log 18716 24548 Celery worker is ready!
+INFO 2025-10-26 13:15:39,577 worker 18716 24548 celery@LAPTOP-I39VB494 ready.
+INFO 2025-10-26 13:15:48,302 autoreload 24068 16080 Watching for file changes with StatReloader
+ERROR 2025-10-26 13:15:50,974 views 8008 22984 Registration error: 'EncryptionService' object has no attribute 'check_duplicate_ssn'
+ERROR 2025-10-26 13:15:50,975 log 8008 22984 Internal Server Error: /api/auth/register/
+WARNING 2025-10-26 13:15:59,392 log 8008 12568 Not Found: /favicon.ico
+ERROR 2025-10-26 13:17:09,276 views 8008 22984 Registration error: 'EncryptionService' object has no attribute 'check_duplicate_ssn'
+ERROR 2025-10-26 13:17:09,277 log 8008 22984 Internal Server Error: /api/auth/register/
+ERROR 2025-10-26 13:17:28,153 utils 8008 22984 API Exception: Method "GET" not allowed. - {'view': <registration.views.UserRegistrationView object at 0x000001E1358476D0>, 'args': (), 'kwargs': {}, 'request': <rest_framework.request.Request: GET '/api/auth/register/'>}
+WARNING 2025-10-26 13:17:28,155 log 8008 22984 Method Not Allowed: /api/auth/register/
+ERROR 2025-10-26 13:17:40,893 utils 24068 9832 API Exception: Method "GET" not allowed. - {'view': <registration.views.UserRegistrationView object at 0x000001044F615F90>, 'args': (), 'kwargs': {}, 'request': <rest_framework.request.Request: GET '/api/auth/register/'>}
+WARNING 2025-10-26 13:17:40,893 log 24068 9832 Method Not Allowed: /api/auth/register/
+WARNING 2025-10-26 13:17:46,002 utils 24068 9832 Security event logged: RATE_LIMIT_EXCEEDED - Rate limit exceeded for /api/auth/register/
+WARNING 2025-10-26 13:17:46,003 log 24068 9832 Too Many Requests: /api/auth/register/
+INFO 2025-10-26 13:18:09,316 strategy 18716 24548 Task registration.tasks.monitor_system_health[6ba41c64-419a-4fc4-81cf-f1a4c4e7033e] received
+WARNING 2025-10-26 13:18:09,319 warnings 18716 24548 C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py:1503: UserWarning: Soft timeouts are not supported: on this platform: It does not have the SIGUSR1 signal.
+  warnings.warn(UserWarning(
+
+ERROR 2025-10-26 13:18:09,354 request 18716 24524 Task handler raised error: ValueError('not enough values to unpack (expected 3, got 0)')
+billiard.einfo.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+INFO 2025-10-26 13:18:14,053 autoreload 24068 16080 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\smartbank\settings.py changed, reloading.
+INFO 2025-10-26 13:18:15,666 autoreload 15264 22844 Watching for file changes with StatReloader
+ERROR 2025-10-26 13:18:24,328 views 15264 9884 Registration error: 'EncryptionService' object has no attribute 'check_duplicate_ssn'
+ERROR 2025-10-26 13:18:24,329 log 15264 9884 Internal Server Error: /api/auth/register/
+INFO 2025-10-26 13:19:14,191 autoreload 15264 22844 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\registration\utils.py changed, reloading.
+INFO 2025-10-26 13:19:18,919 autoreload 10028 16600 Watching for file changes with StatReloader
+ERROR 2025-10-26 13:21:04,704 utils 24268 23076 SSN encryption failed: ['Invalid SSN number']
+ERROR 2025-10-26 13:21:35,376 utils 10316 22752 SSN encryption failed: Fernet key must be 32 url-safe base64-encoded bytes.
+ERROR 2025-10-26 13:21:35,485 utils 10316 22752 SSN encryption failed: Fernet key must be 32 url-safe base64-encoded bytes.
+ERROR 2025-10-26 13:21:35,485 utils 10316 22752 SSN duplicate check failed: ['Failed to encrypt SSN']
+INFO 2025-10-26 13:21:52,562 autoreload 10028 16600 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\smartbank\settings.py changed, reloading.
+INFO 2025-10-26 13:21:54,793 autoreload 24488 21720 Watching for file changes with StatReloader
+INFO 2025-10-26 13:22:19,882 autoreload 24488 21720 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\registration\utils.py changed, reloading.
+INFO 2025-10-26 13:22:21,777 autoreload 23132 23784 Watching for file changes with StatReloader
+INFO 2025-10-26 13:22:31,165 autoreload 23132 23784 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\smartbank\settings.py changed, reloading.
+INFO 2025-10-26 13:22:33,483 autoreload 22476 22124 Watching for file changes with StatReloader
+INFO 2025-10-26 13:22:49,892 utils 22476 18952 Assigned CUSTOMER role to user test_user
+INFO 2025-10-26 13:22:49,909 utils 22476 18952 Audit log created: CREATE - User registered: test_user
+INFO 2025-10-26 13:22:50,043 strategy 18716 24548 Task registration.tasks.notify_admin_new_registration[13018aa9-3f66-4252-9f1a-8ebba2f5e6be] received
+ERROR 2025-10-26 13:22:50,108 request 18716 24524 Task handler raised error: ValueError('not enough values to unpack (expected 3, got 0)')
+billiard.einfo.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+INFO 2025-10-26 13:23:09,374 strategy 18716 24548 Task registration.tasks.monitor_system_health[34598d6e-8bce-4af4-bff7-acf50ad04619] received
+ERROR 2025-10-26 13:23:09,420 request 18716 24524 Task handler raised error: ValueError('not enough values to unpack (expected 3, got 0)')
+billiard.einfo.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+ERROR 2025-10-26 13:26:04,908 log 22476 18952 Internal Server Error: /api/auth/login
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/auth/login/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+INFO 2025-10-26 13:26:21,311 utils 22476 23376 Audit log created: LOGIN - User logged in: test_user
+INFO 2025-10-26 13:28:09,431 strategy 18716 24548 Task registration.tasks.monitor_system_health[6549ae26-d985-40e1-b653-7fe9e5cb62b0] received
+ERROR 2025-10-26 13:28:09,624 request 18716 24524 Task handler raised error: ValueError('not enough values to unpack (expected 3, got 0)')
+billiard.einfo.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+CRITICAL 2025-10-26 13:28:10,493 worker 18716 24548 Unrecoverable error: ResponseError("MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.")
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\worker\worker.py", line 202, in start
+    self.blueprint.start(self)
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\bootsteps.py", line 116, in start
+    step.start(parent)
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\bootsteps.py", line 365, in start
+    return self.obj.start()
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\worker\consumer\consumer.py", line 340, in start
+    blueprint.start(self)
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\bootsteps.py", line 116, in start
+    step.start(parent)
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\worker\consumer\consumer.py", line 742, in start
+    c.loop(*c.loop_args())
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\worker\loops.py", line 130, in synloop
+    connection.drain_events(timeout=2.0)
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\kombu\connection.py", line 341, in drain_events
+    return self.transport.drain_events(self.connection, **kwargs)
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\kombu\transport\virtual\base.py", line 997, in drain_events
+    get(self._deliver, timeout=timeout)
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\kombu\transport\redis.py", line 591, in get
+    ret = self.handle_event(fileno, event)
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\kombu\transport\redis.py", line 573, in handle_event
+    return self.on_readable(fileno), self
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\kombu\transport\redis.py", line 569, in on_readable
+    chan.handlers[type]()
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\kombu\transport\redis.py", line 967, in _brpop_read
+    dest__item = self.client.parse_response(self.client.connection,
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\redis\client.py", line 553, in parse_response
+    response = connection.read_response()
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\redis\connection.py", line 524, in read_response
+    raise response
+redis.exceptions.ResponseError: MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+WARNING 2025-10-26 13:28:11,621 log 18716 24548 Celery worker is shutting down!
+ERROR 2025-10-26 13:31:52,300 utils 22476 23376 Rate limit check failed: MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+ERROR 2025-10-26 13:31:52,375 utils 22476 23376 API Exception: Method "GET" not allowed. - {'view': <registration.views.KYCDocumentUploadView object at 0x00000220C4026890>, 'args': (), 'kwargs': {}, 'request': <rest_framework.request.Request: GET '/api/kyc/upload/'>}
+WARNING 2025-10-26 13:31:52,376 log 22476 23376 Method Not Allowed: /api/kyc/upload/
+ERROR 2025-10-26 13:31:56,342 utils 22476 23376 Rate limit check failed: MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+WARNING 2025-10-26 13:31:56,417 log 22476 23376 Bad Request: /api/kyc/upload/
+ERROR 2025-10-26 13:32:10,249 utils 22476 23376 Rate limit check failed: MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+WARNING 2025-10-26 13:32:10,322 log 22476 23376 Bad Request: /api/kyc/upload/
+ERROR 2025-10-26 13:32:28,593 utils 22476 23376 Rate limit check failed: MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+WARNING 2025-10-26 13:32:28,667 log 22476 23376 Bad Request: /api/kyc/upload/
+ERROR 2025-10-26 13:32:55,805 utils 22476 23376 Rate limit check failed: MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+ERROR 2025-10-26 13:32:55,901 views 22476 23376 KYC upload error: 'bytes' object has no attribute 'read'
+ERROR 2025-10-26 13:32:55,901 log 22476 23376 Internal Server Error: /api/kyc/upload/
+INFO 2025-10-26 13:35:47,143 autoreload 22476 22124 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\smartbank\settings.py changed, reloading.
+INFO 2025-10-26 13:35:50,044 autoreload 24148 22808 Watching for file changes with StatReloader
+INFO 2025-10-26 13:36:07,474 autoreload 24148 22808 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\registration\serializers.py changed, reloading.
+INFO 2025-10-26 13:36:09,577 autoreload 20176 22532 Watching for file changes with StatReloader
+INFO 2025-10-26 13:36:18,975 autoreload 20176 22532 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\registration\serializers.py changed, reloading.
+INFO 2025-10-26 13:36:24,149 autoreload 24200 23008 Watching for file changes with StatReloader
+INFO 2025-10-26 13:36:32,994 autoreload 24200 23008 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\registration\middleware.py changed, reloading.
+INFO 2025-10-26 13:36:37,585 autoreload 23748 24688 Watching for file changes with StatReloader
+INFO 2025-10-26 13:38:24,596 autoreload 23748 24688 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\registration\middleware.py changed, reloading.
+INFO 2025-10-26 13:38:26,876 autoreload 24032 24724 Watching for file changes with StatReloader
+INFO 2025-10-26 13:38:34,912 autoreload 24032 24724 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\smartbank\settings.py changed, reloading.
+INFO 2025-10-26 13:38:37,346 autoreload 25520 25296 Watching for file changes with StatReloader
+WARNING 2025-10-26 13:38:53,741 warnings 6564 23900 C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py:1022: UserWarning: Soft timeouts are not supported: on this platform: It does not have the SIGUSR1 signal.
+  warnings.warn(UserWarning(
+
+WARNING 2025-10-26 13:38:53,801 warnings 6564 23900 C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+INFO 2025-10-26 13:38:53,808 connection 6564 23900 Connected to redis://localhost:6379/0
+WARNING 2025-10-26 13:38:53,809 warnings 6564 23900 C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\worker\consumer\consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+INFO 2025-10-26 13:38:53,817 mingle 6564 23900 mingle: searching for neighbors
+INFO 2025-10-26 13:38:54,853 mingle 6564 23900 mingle: all alone
+WARNING 2025-10-26 13:38:54,873 log 6564 23900 Celery worker is ready!
+INFO 2025-10-26 13:38:54,873 worker 6564 23900 celery@LAPTOP-I39VB494 ready.
+INFO 2025-10-26 13:38:54,876 strategy 6564 23900 Task registration.tasks.monitor_system_health[140c68db-7891-4818-9704-e42c34898798] received
+WARNING 2025-10-26 13:38:54,881 warnings 6564 23900 C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py:1503: UserWarning: Soft timeouts are not supported: on this platform: It does not have the SIGUSR1 signal.
+  warnings.warn(UserWarning(
+
+ERROR 2025-10-26 13:38:56,815 request 6564 25380 Task handler raised error: ValueError('not enough values to unpack (expected 3, got 0)')
+billiard.einfo.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+ERROR 2025-10-26 13:39:11,424 serializers 25520 2560 KYC document processing error: 'bytes' object has no attribute 'read'
+ERROR 2025-10-26 13:39:11,426 views 25520 2560 KYC upload error: [ErrorDetail(string="Failed to process document: 'bytes' object has no attribute 'read'", code='invalid')]
+ERROR 2025-10-26 13:39:11,427 log 25520 2560 Internal Server Error: /api/kyc/upload/
+WARNING 2025-10-26 13:39:21,448 log 25520 2560 Bad Request: /api/kyc/upload/
+ERROR 2025-10-26 13:39:45,202 serializers 25520 2560 KYC document processing error: 'bytes' object has no attribute 'read'
+ERROR 2025-10-26 13:39:45,203 views 25520 2560 KYC upload error: [ErrorDetail(string="Failed to process document: 'bytes' object has no attribute 'read'", code='invalid')]
+ERROR 2025-10-26 13:39:45,203 log 25520 2560 Internal Server Error: /api/kyc/upload/
+INFO 2025-10-26 13:43:09,609 strategy 6564 23900 Task registration.tasks.monitor_system_health[862bb070-a05b-4b75-842b-9e8313148e2c] received
+ERROR 2025-10-26 13:43:09,615 request 6564 25380 Task handler raised error: ValueError('not enough values to unpack (expected 3, got 0)')
+billiard.einfo.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+INFO 2025-10-26 13:48:09,667 strategy 6564 23900 Task registration.tasks.monitor_system_health[68a92ae3-5ff4-4d18-add7-02c716705942] received
+ERROR 2025-10-26 13:48:09,684 request 6564 25380 Task handler raised error: ValueError('not enough values to unpack (expected 3, got 0)')
+billiard.einfo.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+INFO 2025-10-26 13:53:09,755 strategy 6564 23900 Task registration.tasks.monitor_system_health[fab275c5-76c7-4d62-9137-9113a2420532] received
+ERROR 2025-10-26 13:53:09,955 request 6564 25380 Task handler raised error: ValueError('not enough values to unpack (expected 3, got 0)')
+billiard.einfo.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+INFO 2025-10-26 14:33:37,646 strategy 6564 23900 Task registration.tasks.monitor_system_health[4b334b45-3d70-4140-a829-faf9bfbaf345] received
+ERROR 2025-10-26 14:33:38,173 request 6564 25380 Task handler raised error: ValueError('not enough values to unpack (expected 3, got 0)')
+billiard.einfo.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+INFO 2025-10-26 14:33:38,668 strategy 6564 23900 Task registration.tasks.cleanup_expired_data[2cd667cf-5a0e-4450-ad69-acff46b6d079] received
+ERROR 2025-10-26 14:33:38,747 request 6564 25380 Task handler raised error: ValueError('not enough values to unpack (expected 3, got 0)')
+billiard.einfo.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+INFO 2025-10-26 14:35:16,352 autoreload 25520 25296 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\registration\views.py changed, reloading.
+INFO 2025-10-26 14:35:22,741 autoreload 28160 27964 Watching for file changes with StatReloader
+INFO 2025-10-26 14:35:33,692 autoreload 28160 27964 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\registration\views.py changed, reloading.
+INFO 2025-10-26 14:35:36,400 autoreload 28244 23916 Watching for file changes with StatReloader
+INFO 2025-10-26 14:35:42,031 autoreload 28244 23916 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\registration\views.py changed, reloading.
+INFO 2025-10-26 14:35:44,456 autoreload 27088 27908 Watching for file changes with StatReloader
+ERROR 2025-10-26 14:36:53,046 serializers 2560 3024 KYC document processing error: 'bytes' object has no attribute 'read'
+INFO 2025-10-26 14:37:04,680 autoreload 27088 27908 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\registration\serializers.py changed, reloading.
+INFO 2025-10-26 14:37:07,127 autoreload 17492 15904 Watching for file changes with StatReloader
+ERROR 2025-10-26 14:37:11,078 utils 18448 25052 Failed to create audit log: 'MockRequest' object has no attribute 'META'
+INFO 2025-10-26 14:37:29,432 utils 25784 25312 Audit log created: DOCUMENT_UPLOAD - Uploaded GOVERNMENT_ID document
+INFO 2025-10-26 14:37:49,608 autoreload 17492 15904 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\registration\serializers.py changed, reloading.
+INFO 2025-10-26 14:37:52,192 autoreload 21532 28068 Watching for file changes with StatReloader
+ERROR 2025-10-26 14:38:22,820 utils 21532 11632 API Exception: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]} - {'view': <registration.views.KYCDocumentUploadView object at 0x000001594B9D2F50>, 'args': (), 'kwargs': {}, 'request': <rest_framework.request.Request: POST '/api/kyc/upload/'>}
+WARNING 2025-10-26 14:38:22,821 log 21532 11632 Unauthorized: /api/kyc/upload/
+INFO 2025-10-26 14:38:36,877 utils 21532 11632 Audit log created: LOGIN - User logged in: test_user
+INFO 2025-10-26 14:38:37,508 strategy 6564 23900 Task registration.tasks.monitor_system_health[6183f6c9-79a4-43cf-a996-8da6fba8a40a] received
+ERROR 2025-10-26 14:38:37,526 request 6564 25380 Task handler raised error: ValueError('not enough values to unpack (expected 3, got 0)')
+billiard.einfo.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+INFO 2025-10-26 14:38:53,983 utils 21532 11632 Audit log created: DOCUMENT_UPLOAD - Uploaded GOVERNMENT_ID document
+INFO 2025-10-26 14:43:24,845 autoreload 21532 28068 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\registration\utils.py changed, reloading.
+INFO 2025-10-26 14:43:28,250 autoreload 25692 27476 Watching for file changes with StatReloader
+INFO 2025-10-26 14:43:37,661 strategy 6564 23900 Task registration.tasks.monitor_system_health[f1c3a55b-27ac-49a9-ad2c-883d8f140438] received
+ERROR 2025-10-26 14:43:37,701 request 6564 25380 Task handler raised error: ValueError('not enough values to unpack (expected 3, got 0)')
+billiard.einfo.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+INFO 2025-10-26 14:44:05,036 autoreload 25692 27476 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\registration\utils.py changed, reloading.
+INFO 2025-10-26 14:44:07,700 autoreload 8952 13060 Watching for file changes with StatReloader
+INFO 2025-10-26 14:46:00,172 utils 8952 22208 Audit log created: DOCUMENT_UPLOAD - Uploaded PASSPORT document
+WARNING 2025-10-26 14:46:16,399 log 8952 22208 Bad Request: /api/kyc/upload/
+ERROR 2025-10-26 14:48:12,411 utils 8952 22208 SSN encryption failed: ['Invalid SSN format']
+ERROR 2025-10-26 14:48:12,411 utils 8952 22208 SSN duplicate check failed: ['Failed to encrypt SSN']
+ERROR 2025-10-26 14:48:12,412 utils 8952 22208 SSN encryption failed: ['Invalid SSN format']
+ERROR 2025-10-26 14:48:12,412 views 8952 22208 Registration error: ['Failed to encrypt SSN']
+ERROR 2025-10-26 14:48:12,412 log 8952 22208 Internal Server Error: /api/auth/register/
+INFO 2025-10-26 14:48:37,728 strategy 6564 23900 Task registration.tasks.monitor_system_health[19f65839-a626-498a-ad2b-182c790a2115] received
+ERROR 2025-10-26 14:48:37,754 request 6564 25380 Task handler raised error: ValueError('not enough values to unpack (expected 3, got 0)')
+billiard.einfo.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+INFO 2025-10-26 14:48:50,294 utils 8952 22208 Assigned CUSTOMER role to user sakshi
+INFO 2025-10-26 14:48:50,298 utils 8952 22208 Audit log created: CREATE - User registered: sakshi
+INFO 2025-10-26 14:49:32,551 utils 8952 22208 Audit log created: LOGIN - User logged in: sakshi
+INFO 2025-10-26 14:50:01,804 utils 8952 22208 Audit log created: DOCUMENT_UPLOAD - Uploaded PASSPORT document
+INFO 2025-10-26 14:53:37,970 strategy 6564 23900 Task registration.tasks.monitor_system_health[3dbc2389-aaa8-4eba-b1c4-47a1b6c32414] received
+ERROR 2025-10-26 14:53:38,011 request 6564 25380 Task handler raised error: ValueError('not enough values to unpack (expected 3, got 0)')
+billiard.einfo.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+INFO 2025-10-26 14:53:39,557 autoreload 8952 13060 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\registration\serializers.py changed, reloading.
+INFO 2025-10-26 14:53:43,871 autoreload 26108 16252 Watching for file changes with StatReloader
+INFO 2025-10-26 14:53:53,788 autoreload 26108 16252 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\registration\serializers.py changed, reloading.
+INFO 2025-10-26 14:53:56,065 autoreload 26240 24524 Watching for file changes with StatReloader
+INFO 2025-10-26 14:54:12,014 autoreload 26240 24524 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\registration\serializers.py changed, reloading.
+INFO 2025-10-26 14:54:15,257 autoreload 21940 14624 Watching for file changes with StatReloader
+INFO 2025-10-26 14:54:26,525 autoreload 21940 14624 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\registration\serializers.py changed, reloading.
+INFO 2025-10-26 14:54:30,627 autoreload 26312 27032 Watching for file changes with StatReloader
+INFO 2025-10-26 14:56:46,156 autoreload 26312 27032 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\registration\serializers.py changed, reloading.
+INFO 2025-10-26 14:56:52,890 autoreload 27404 21540 Watching for file changes with StatReloader
+INFO 2025-10-26 14:58:37,991 strategy 6564 23900 Task registration.tasks.monitor_system_health[9943ad27-7c66-4ce6-b848-aa3a64df4060] received
+ERROR 2025-10-26 14:58:38,023 request 6564 25380 Task handler raised error: ValueError('not enough values to unpack (expected 3, got 0)')
+billiard.einfo.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+INFO 2025-10-26 14:58:45,170 utils 27404 28368 Assigned CUSTOMER role to user harsha
+INFO 2025-10-26 14:58:45,174 utils 27404 28368 Audit log created: CREATE - User registered: harsha
+WARNING 2025-10-26 14:58:52,886 log 27404 28368 Bad Request: /api/auth/register/
+INFO 2025-10-26 14:59:16,656 utils 27404 28368 Audit log created: LOGIN - User logged in: harsha
+INFO 2025-10-26 14:59:45,519 utils 27404 28368 Audit log created: DOCUMENT_UPLOAD - Uploaded PASSPORT document
+WARNING 2025-10-26 14:59:49,389 log 27404 28368 Bad Request: /api/kyc/upload/
+INFO 2025-10-26 15:00:04,047 utils 27404 28368 Audit log created: DOCUMENT_UPLOAD - Uploaded GOVERNMENT_ID document
+INFO 2025-10-26 15:02:53,711 utils 27592 21224 Assigned CUSTOMER role to user flow_test_user
+INFO 2025-10-26 15:03:21,423 autoreload 27404 21540 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\registration\models.py changed, reloading.
+INFO 2025-10-26 15:03:25,410 autoreload 13980 26660 Watching for file changes with StatReloader
+INFO 2025-10-26 15:03:29,410 autoreload 13980 26660 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\registration\views.py changed, reloading.
+INFO 2025-10-26 15:03:32,487 autoreload 23884 27444 Watching for file changes with StatReloader
+INFO 2025-10-26 15:03:38,089 strategy 6564 23900 Task registration.tasks.monitor_system_health[f817e8ad-5d20-477f-816d-cc099adb9efd] received
+ERROR 2025-10-26 15:03:38,129 request 6564 25380 Task handler raised error: ValueError('not enough values to unpack (expected 3, got 0)')
+billiard.einfo.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+INFO 2025-10-26 15:03:38,709 autoreload 23884 27444 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\registration\serializers.py changed, reloading.
+INFO 2025-10-26 15:03:41,897 autoreload 27032 27484 Watching for file changes with StatReloader
+INFO 2025-10-26 15:03:49,729 autoreload 27032 27484 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\registration\views.py changed, reloading.
+INFO 2025-10-26 15:03:52,794 autoreload 26096 23764 Watching for file changes with StatReloader
+INFO 2025-10-26 15:07:28,442 utils 26096 2056 Audit log created: DOCUMENT_UPLOAD - Uploaded BANK_STATEMENT document
+INFO 2025-10-26 15:08:38,264 strategy 6564 23900 Task registration.tasks.monitor_system_health[7d3fb483-12df-4980-8e4c-f8428521bd02] received
+ERROR 2025-10-26 15:08:38,289 request 6564 25380 Task handler raised error: ValueError('not enough values to unpack (expected 3, got 0)')
+billiard.einfo.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+INFO 2025-10-26 15:09:35,710 utils 28476 15904 Audit log created: DOCUMENT_UPLOAD - Uploaded GOVERNMENT_ID document
+INFO 2025-10-26 15:09:35,721 utils 28476 15904 Audit log created: DOCUMENT_UPLOAD - Uploaded PASSPORT document
+INFO 2025-10-26 15:09:35,736 utils 28476 15904 Audit log created: DOCUMENT_UPLOAD - Uploaded DRIVER_LICENSE document
+INFO 2025-10-26 15:09:35,748 utils 28476 15904 Audit log created: DOCUMENT_UPLOAD - Uploaded UTILITY_BILL document
+INFO 2025-10-26 15:09:35,763 utils 28476 15904 Audit log created: DOCUMENT_UPLOAD - Uploaded BANK_STATEMENT document
+INFO 2025-10-26 15:09:36,283 utils 28476 15904 Audit log created: DOCUMENT_UPLOAD - Uploaded GOVERNMENT_ID document
+INFO 2025-10-26 15:09:36,299 utils 28476 15904 Audit log created: DOCUMENT_UPLOAD - Uploaded PASSPORT document
+WARNING 2025-10-26 15:10:21,682 log 26096 2056 Bad Request: /api/kyc/upload/
+INFO 2025-10-26 15:10:33,013 utils 26096 2056 Audit log created: DOCUMENT_UPLOAD - Uploaded UTILITY_BILL document
+WARNING 2025-10-26 15:10:42,635 log 26096 2056 Bad Request: /api/kyc/upload/
+INFO 2025-10-26 15:10:58,040 utils 26096 2056 Audit log created: DOCUMENT_UPLOAD - Uploaded DRIVER_LICENSE document
+WARNING 2025-10-26 15:11:12,013 log 26096 2056 Bad Request: /api/kyc/upload/
+WARNING 2025-10-26 15:11:17,827 log 26096 2056 Bad Request: /api/kyc/upload/
+WARNING 2025-10-26 15:11:27,153 log 26096 2056 Bad Request: /api/kyc/upload/
+WARNING 2025-10-26 15:11:33,558 log 26096 2056 Bad Request: /api/kyc/upload/
+INFO 2025-10-26 15:13:38,443 strategy 6564 23900 Task registration.tasks.monitor_system_health[ca3313b4-8932-465a-aa13-e21261239d8e] received
+ERROR 2025-10-26 15:13:38,471 request 6564 25380 Task handler raised error: ValueError('not enough values to unpack (expected 3, got 0)')
+billiard.einfo.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+INFO 2025-10-26 15:14:16,464 autoreload 28264 25396 Watching for file changes with StatReloader

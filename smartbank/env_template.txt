@@ -1,0 +1,38 @@
+# Django Settings
+SECRET_KEY=your-secret-key-here
+DEBUG=True
+ALLOWED_HOSTS=localhost,127.0.0.1
+
+# Database Settings
+DB_NAME=smartbank_db
+DB_USER=postgres
+DB_PASSWORD=your-password
+DB_HOST=localhost
+DB_PORT=5432
+USE_SQLITE=False
+
+# Redis Settings
+REDIS_URL=redis://localhost:6379/0
+
+# Encryption Keys (Generate new keys for production)
+ENCRYPTION_KEY_SSN=your-ssn-encryption-key-32-chars-long
+ENCRYPTION_KEY_ADDRESS=your-address-encryption-key-32-chars
+ENCRYPTION_KEY_DOCUMENTS=your-document-encryption-key-32-chars
+
+# Email Settings
+DEFAULT_FROM_EMAIL=noreply@smartbank.com
+EMAIL_HOST=smtp.gmail.com
+EMAIL_PORT=587
+EMAIL_USE_TLS=True
+EMAIL_HOST_USER=your-email@gmail.com
+EMAIL_HOST_PASSWORD=your-app-password
+
+# Celery Settings
+CELERY_BROKER_URL=redis://localhost:6379/0
+CELERY_RESULT_BACKEND=redis://localhost:6379/0
+
+# Security Settings
+SECURE_SSL_REDIRECT=False
+SECURE_HSTS_SECONDS=0
+SECURE_HSTS_INCLUDE_SUBDOMAINS=False
+SECURE_HSTS_PRELOAD=False
