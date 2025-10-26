@@ -261,149 +261,10 @@ Authorization: Bearer <access_token>
 
 **Note:** Sensitive fields (SSN, address) cannot be updated via API for security reasons.
 
-### Account Management Endpoints
-
-#### 5. List User Accounts
-**Endpoint:** `GET /api/accounts/`
-
-**Description:** List all accounts for the authenticated user
-
-**Headers:**
-```
-Authorization: Bearer <access_token>
-```
-
-**Success Response (200 OK):**
-```json
-{
-  "count": 2,
-  "next": null,
-  "previous": null,
-  "results": [
-    {
-      "id": 1,
-      "account_number": "SAV123456789",
-      "account_type": "SAVINGS",
-      "balance": "1000.00",
-      "available_balance": "900.00",
-      "status": "ACTIVE",
-      "minimum_balance": "100.00",
-      "created_at": "2024-01-15T11:00:00Z"
-    }
-  ]
-}
-```
-
-#### 6. Create Bank Account
-**Endpoint:** `POST /api/accounts/`
-
-**Description:** Create a new bank account
-
-**Prerequisites:** User must have KYC status = APPROVED
-
-**Request Body:**
-```json
-{
-  "account_type": "SAVINGS",
-  "minimum_balance": "100.00"
-}
-```
-
-**Available Account Types:**
-- `SAVINGS` - Savings account
-- `CURRENT` - Current/Checking account
-- `FIXED_DEPOSIT` - Fixed deposit account
-
-**Success Response (201 Created):**
-```json
-{
-  "id": 1,
-  "account_number": "SAV123456789",
-  "account_type": "SAVINGS",
-  "balance": "0.00",
-  "available_balance": "0.00",
-  "status": "ACTIVE",
-  "interest_rate": "0.00",
-  "minimum_balance": "100.00",
-  "daily_transaction_limit": "50000.00",
-  "single_transaction_limit": "10000.00",
-  "created_at": "2024-01-15T11:00:00Z"
-}
-```
-
-**Error Response (403 Forbidden):**
-```json
-{
-  "error": "KYC verification required to create account. Please complete KYC verification."
-}
-```
-
-### Transaction Endpoints
-
-#### 7. Create Transaction (Deposit)
-**Endpoint:** `POST /api/transactions/`
-
-**Description:** Create a deposit transaction
-
-**Request Body:**
-```json
-{
-  "transaction_type": "DEPOSIT",
-  "to_account_number": "SAV123456789",
-  "amount": "500.00",
-  "description": "Initial deposit"
-}
-```
-
-#### 8. Create Transaction (Transfer)
-**Endpoint:** `POST /api/transactions/`
-
-**Description:** Transfer funds between accounts
-
-**Request Body:**
-```json
-{
-  "transaction_type": "TRANSFER",
-  "from_account_number": "SAV123456789",
-  "to_account_number": "SAV987654321",
-  "amount": "100.00",
-  "description": "Transfer to savings"
-}
-```
-
-**Transaction Types:**
-- `DEPOSIT` - Add funds to account
-- `WITHDRAWAL` - Withdraw funds from account
-- `TRANSFER` - Transfer between accounts
-- `PAYMENT` - Make a payment
-- `FEE` - Transaction fee
-- `INTEREST` - Interest payment
-
-**Success Response (201 Created):**
-```json
-{
-  "id": 1,
-  "transaction_id": "TXN12345ABC",
-  "transaction_type": "TRANSFER",
-  "amount": "100.00",
-  "fee": "1.00",
-  "status": "COMPLETED",
-  "from_account": {
-    "account_number": "SAV123456789",
-    "balance": "900.00"
-  },
-  "to_account": {
-    "account_number": "SAV987654321",
-    "balance": "1100.00"
-  },
-  "transaction_date": "2024-01-15T12:00:00Z",
-  "processed_date": "2024-01-15T12:00:01Z"
-}
-```
 
 ### Admin Endpoints (Bank Admin Only)
 
-#### 9. Update KYC Status
+#### 5. Update KYC Status
 **Endpoint:** `PUT /api/users/{user_id}/` (Admin Only)
 
 **Description:** Update user's KYC status
@@ -420,7 +281,7 @@ Authorization: Bearer <access_token>
 - `APPROVED` - Verified and approved
 - `REJECTED` - Rejected with reason
 
-#### 10. List Fraud Alerts
+#### 6. List Fraud Alerts
 **Endpoint:** `GET /api/fraud-alerts/`
 
 **Description:** View fraud alerts (Bank Staff Only)
@@ -451,7 +312,7 @@ Authorization: Bearer <admin_access_token>
 
 ### Audit Log Endpoints (Auditor Access)
 
-#### 11. View Audit Logs
+#### 7. View Audit Logs
 **Endpoint:** `GET /api/audit-logs/`
 
 **Description:** Access audit trail (Auditor & Admin Only)
@@ -1052,8 +913,7 @@ python manage.py runserver
 |---------|----------|------------|---------|
 | Register Account | ✅ | ✅ | ❌ |
 | View Own Profile | ✅ | ✅ | ✅ (Audit Log) |
-| Create Bank Account | ✅ | ✅ | ❌ |
-| Perform Transactions | ✅ | ✅ | ❌ |
+| Upload KYC Documents | ✅ | ❌ | ❌ |
 | Approve KYC | ❌ | ✅ | ❌ |
 | View All Users | ❌ | ✅ | ❌ |
 | View Fraud Alerts | ❌ | ✅ | ✅ |
@@ -1098,15 +958,13 @@ curl -X GET http://localhost:8000/api/profile/ \
   -H "Authorization: Bearer YOUR_ACCESS_TOKEN"
 ```
 
-### 4. Create Bank Account
+### 4. Upload KYC Document
 ```bash
-curl -X POST http://localhost:8000/api/accounts/ \
+curl -X POST http://localhost:8000/api/kyc/upload/ \
   -H "Authorization: Bearer YOUR_ACCESS_TOKEN" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "account_type": "SAVINGS",
-    "minimum_balance": "100.00"
-  }'
+  -F "document_type=GOVERNMENT_ID" \
+  -F "document_number=ABC123456" \
+  -F "document_file=@/path/to/document.pdf"
 ```
 
 ## 📝 KYC Process Summary
