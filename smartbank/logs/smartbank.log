@@ -690,3 +690,634 @@ Traceback (most recent call last):
     tasks, accept, hostname = _loc
 ValueError: not enough values to unpack (expected 3, got 0)
 INFO 2025-10-26 15:14:16,464 autoreload 28264 25396 Watching for file changes with StatReloader
+INFO 2025-10-26 15:18:38,513 strategy 6564 23900 Task registration.tasks.monitor_system_health[5deb991c-a141-49ee-9436-3081d1ef41bd] received
+ERROR 2025-10-26 15:18:38,546 request 6564 25380 Task handler raised error: ValueError('not enough values to unpack (expected 3, got 0)')
+billiard.einfo.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+INFO 2025-10-26 15:23:38,590 strategy 6564 23900 Task registration.tasks.monitor_system_health[c1787a32-f6bd-411e-ac2c-0f5ed4a8856e] received
+ERROR 2025-10-26 15:23:38,620 request 6564 25380 Task handler raised error: ValueError('not enough values to unpack (expected 3, got 0)')
+billiard.einfo.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+WARNING 2025-10-26 15:25:07,917 log 28264 7196 Bad Request: /api/auth/register/
+INFO 2025-10-26 15:25:46,999 utils 28264 7196 Assigned CUSTOMER role to user deepa
+INFO 2025-10-26 15:25:47,005 utils 28264 7196 Audit log created: CREATE - User registered: deepa
+INFO 2025-10-26 15:26:13,033 utils 28264 7196 Audit log created: LOGIN - User logged in: deepa
+INFO 2025-10-26 15:26:51,719 utils 28264 7196 Audit log created: DOCUMENT_UPLOAD - Uploaded GOVERNMENT_ID document
+WARNING 2025-10-26 15:27:27,119 log 28264 7196 Bad Request: /api/kyc/upload/
+WARNING 2025-10-26 15:27:41,381 log 28264 7196 Bad Request: /api/kyc/upload/
+WARNING 2025-10-26 15:28:07,161 log 28264 7196 Bad Request: /api/kyc/upload/
+INFO 2025-10-26 15:28:38,602 strategy 6564 23900 Task registration.tasks.monitor_system_health[0589228d-70d9-424a-b919-79a5d0216f5b] received
+ERROR 2025-10-26 15:28:38,628 request 6564 25380 Task handler raised error: ValueError('not enough values to unpack (expected 3, got 0)')
+billiard.einfo.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+WARNING 2025-10-26 15:29:09,754 log 28264 7196 Bad Request: /api/kyc/upload/
+WARNING 2025-10-26 15:29:20,764 log 28264 7196 Bad Request: /api/kyc/upload/
+INFO 2025-10-26 15:29:37,246 utils 28264 7196 Audit log created: DOCUMENT_UPLOAD - Uploaded BANK_STATEMENT document
+WARNING 2025-10-26 15:29:51,521 log 28264 7196 Bad Request: /api/kyc/upload/
+WARNING 2025-10-26 15:30:09,947 log 28264 7196 Bad Request: /api/kyc/upload/
+WARNING 2025-10-26 15:30:26,897 log 28264 7196 Bad Request: /api/kyc/upload/
+INFO 2025-10-26 15:33:38,650 strategy 6564 23900 Task registration.tasks.monitor_system_health[5f82ddb5-91e6-41a3-b858-9bf93059fa65] received
+ERROR 2025-10-26 15:33:38,673 request 6564 25380 Task handler raised error: ValueError('not enough values to unpack (expected 3, got 0)')
+billiard.einfo.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+INFO 2025-10-26 15:33:38,724 strategy 6564 23900 Task registration.tasks.cleanup_expired_data[e763fc03-11c0-4e58-a4d1-175dd035514f] received
+ERROR 2025-10-26 15:33:38,748 request 6564 25380 Task handler raised error: ValueError('not enough values to unpack (expected 3, got 0)')
+billiard.einfo.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+WARNING 2025-10-26 15:34:02,419 log 28264 7196 Bad Request: /api/auth/register/
+INFO 2025-10-26 15:34:11,294 utils 28264 7196 Assigned CUSTOMER role to user priya21
+INFO 2025-10-26 15:34:11,298 utils 28264 7196 Audit log created: CREATE - User registered: priya21
+INFO 2025-10-26 15:37:31,043 autoreload 28264 25396 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\registration\serializers.py changed, reloading.
+INFO 2025-10-26 15:37:35,969 autoreload 26108 12760 Watching for file changes with StatReloader
+INFO 2025-10-26 15:37:40,046 autoreload 26108 12760 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\registration\serializers.py changed, reloading.
+INFO 2025-10-26 15:37:41,743 autoreload 28272 26348 Watching for file changes with StatReloader
+INFO 2025-10-26 15:37:46,914 autoreload 28272 26348 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\registration\serializers.py changed, reloading.
+INFO 2025-10-26 15:37:51,053 autoreload 23644 7584 Watching for file changes with StatReloader
+INFO 2025-10-26 15:38:39,740 strategy 6564 23900 Task registration.tasks.monitor_system_health[d1f0418d-b403-4bfa-9b56-aa2c4f32d1f8] received
+ERROR 2025-10-26 15:38:39,807 request 6564 25380 Task handler raised error: ValueError('not enough values to unpack (expected 3, got 0)')
+billiard.einfo.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+INFO 2025-10-26 15:43:39,731 strategy 6564 23900 Task registration.tasks.monitor_system_health[d0113a84-b280-4e10-b38a-f997f99ebdc8] received
+ERROR 2025-10-26 15:43:39,757 request 6564 25380 Task handler raised error: ValueError('not enough values to unpack (expected 3, got 0)')
+billiard.einfo.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+ERROR 2025-10-26 15:44:40,787 utils 28404 17528 SSN encryption failed: ['Invalid SSN number']
+ERROR 2025-10-26 15:44:40,793 utils 28404 17528 SSN encryption failed: ['Invalid SSN number']
+ERROR 2025-10-26 15:44:41,235 utils 28404 17528 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 15:44:41,242 utils 28404 17528 Audit log created: CREATE - User registered: integration_test_user
+WARNING 2025-10-26 15:44:41,258 log 28404 17528 Bad Request: /api/auth/register/
+ERROR 2025-10-26 15:44:41,534 utils 28404 17528 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 15:44:41,535 utils 28404 17528 Audit log created: CREATE - User registered: integration_test_user
+INFO 2025-10-26 15:44:41,815 utils 28404 17528 Audit log created: LOGIN - User logged in: integration_test_user
+INFO 2025-10-26 15:44:41,872 utils 28404 17528 Audit log created: DOCUMENT_UPLOAD - Uploaded GOVERNMENT_ID document
+WARNING 2025-10-26 15:44:41,885 log 28404 17528 Bad Request: /api/kyc/upload/
+ERROR 2025-10-26 15:44:42,157 utils 28404 17528 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 15:44:42,157 utils 28404 17528 Audit log created: CREATE - User registered: integration_test_user
+INFO 2025-10-26 15:44:42,416 utils 28404 17528 Audit log created: LOGIN - User logged in: integration_test_user
+INFO 2025-10-26 15:44:42,434 utils 28404 17528 Audit log created: DOCUMENT_UPLOAD - Uploaded GOVERNMENT_ID document
+ERROR 2025-10-26 15:44:42,701 utils 28404 17528 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 15:44:42,702 utils 28404 17528 Audit log created: CREATE - User registered: integration_test_user
+INFO 2025-10-26 15:44:42,959 utils 28404 17528 Audit log created: LOGIN - User logged in: integration_test_user
+ERROR 2025-10-26 15:44:43,248 utils 28404 17528 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 15:44:43,250 utils 28404 17528 Audit log created: CREATE - User registered: integration_test_user
+WARNING 2025-10-26 15:44:43,265 log 28404 17528 Bad Request: /api/auth/register/
+INFO 2025-10-26 15:46:09,941 autoreload 23644 7584 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\registration\serializers.py changed, reloading.
+INFO 2025-10-26 15:46:11,902 autoreload 13624 25616 Watching for file changes with StatReloader
+WARNING 2025-10-26 15:47:37,256 utils 13624 25908 Security event logged: RATE_LIMIT_EXCEEDED - Rate limit exceeded for /api/auth/register/
+WARNING 2025-10-26 15:47:37,257 log 13624 25908 Too Many Requests: /api/auth/register/
+WARNING 2025-10-26 15:48:08,620 utils 13624 25908 Security event logged: RATE_LIMIT_EXCEEDED - Rate limit exceeded for /api/auth/register/
+WARNING 2025-10-26 15:48:08,620 log 13624 25908 Too Many Requests: /api/auth/register/
+INFO 2025-10-26 15:48:39,787 strategy 6564 23900 Task registration.tasks.monitor_system_health[264d0830-145f-441f-bf60-3c7694f0dde8] received
+ERROR 2025-10-26 15:48:39,808 request 6564 25380 Task handler raised error: ValueError('not enough values to unpack (expected 3, got 0)')
+billiard.einfo.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+INFO 2025-10-26 15:48:42,087 autoreload 13624 25616 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\smartbank\settings.py changed, reloading.
+INFO 2025-10-26 15:48:44,434 autoreload 26508 24596 Watching for file changes with StatReloader
+WARNING 2025-10-26 15:48:54,349 log 26508 17496 Bad Request: /api/auth/register/
+WARNING 2025-10-26 15:49:42,332 log 26508 17496 Bad Request: /api/auth/register/
+INFO 2025-10-26 15:50:00,226 autoreload 27284 26684 Watching for file changes with StatReloader
+WARNING 2025-10-26 15:50:03,026 log 27284 27116 Bad Request: /api/auth/register/
+WARNING 2025-10-26 15:50:21,803 log 27284 27116 Bad Request: /api/auth/register/
+WARNING 2025-10-26 15:51:01,792 log 27284 27116 Bad Request: /api/auth/register/
+INFO 2025-10-26 15:51:22,116 autoreload 27284 26684 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\smartbank\settings.py changed, reloading.
+INFO 2025-10-26 15:51:24,221 autoreload 27396 28576 Watching for file changes with StatReloader
+WARNING 2025-10-26 15:51:27,160 log 27396 21348 Bad Request: /api/auth/register/
+INFO 2025-10-26 15:52:22,835 autoreload 27396 28576 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\registration\middleware.py changed, reloading.
+INFO 2025-10-26 15:52:26,441 autoreload 24596 2872 Watching for file changes with StatReloader
+INFO 2025-10-26 15:52:51,638 autoreload 24596 2872 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\smartbank\settings.py changed, reloading.
+INFO 2025-10-26 15:52:59,248 autoreload 27980 23656 Watching for file changes with StatReloader
+INFO 2025-10-26 15:53:39,882 strategy 6564 23900 Task registration.tasks.monitor_system_health[5ddfe09d-4930-4408-b39f-f10c59621b60] received
+ERROR 2025-10-26 15:53:39,909 request 6564 25380 Task handler raised error: ValueError('not enough values to unpack (expected 3, got 0)')
+billiard.einfo.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+INFO 2025-10-26 15:53:45,759 autoreload 27980 23656 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\smartbank\settings.py changed, reloading.
+INFO 2025-10-26 15:53:50,491 autoreload 24524 27616 Watching for file changes with StatReloader
+WARNING 2025-10-26 15:54:00,170 log 24524 20664 Bad Request: /api/auth/register/
+INFO 2025-10-26 15:54:10,794 autoreload 25156 23000 Watching for file changes with StatReloader
+WARNING 2025-10-26 15:54:12,943 log 25156 24932 Bad Request: /api/auth/register/
+WARNING 2025-10-26 15:54:47,504 log 25156 27760 Bad Request: /api/auth/register/
+WARNING 2025-10-26 15:54:49,714 log 25156 27596 Bad Request: /api/auth/register/
+WARNING 2025-10-26 15:54:51,938 log 25156 3204 Bad Request: /api/auth/register/
+INFO 2025-10-26 15:54:54,548 utils 25156 23360 Assigned CUSTOMER role to user rate_test_user_3
+INFO 2025-10-26 15:54:54,551 utils 25156 23360 Audit log created: CREATE - User registered: rate_test_user_3
+INFO 2025-10-26 15:54:56,991 utils 25156 26416 Assigned CUSTOMER role to user rate_test_user_4
+INFO 2025-10-26 15:54:56,993 utils 25156 26416 Audit log created: CREATE - User registered: rate_test_user_4
+WARNING 2025-10-26 15:54:59,208 log 25156 28100 Bad Request: /api/auth/login/
+WARNING 2025-10-26 15:55:01,411 log 25156 27632 Bad Request: /api/auth/login/
+WARNING 2025-10-26 15:55:03,619 log 25156 24888 Bad Request: /api/auth/login/
+WARNING 2025-10-26 15:55:05,845 log 25156 24124 Bad Request: /api/auth/login/
+WARNING 2025-10-26 15:55:08,053 log 25156 23824 Bad Request: /api/auth/login/
+WARNING 2025-10-26 15:55:10,356 log 25156 25796 Bad Request: /api/auth/login/
+WARNING 2025-10-26 15:55:12,552 log 25156 24856 Bad Request: /api/auth/login/
+WARNING 2025-10-26 15:55:14,766 log 25156 18224 Bad Request: /api/auth/login/
+WARNING 2025-10-26 15:55:17,008 log 25156 26552 Bad Request: /api/auth/login/
+WARNING 2025-10-26 15:55:19,204 log 25156 28360 Bad Request: /api/auth/login/
+INFO 2025-10-26 15:58:39,993 strategy 6564 23900 Task registration.tasks.monitor_system_health[a32ca993-3555-4150-94c1-0db1c5c37489] received
+ERROR 2025-10-26 15:58:40,050 request 6564 25380 Task handler raised error: ValueError('not enough values to unpack (expected 3, got 0)')
+billiard.einfo.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+WARNING 2025-10-26 16:01:19,535 log 18628 9624 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:01:19,547 log 18628 9624 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:01:19,550 log 18628 9624 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:01:19,554 log 18628 9624 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:01:19,559 log 18628 9624 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:01:19,562 log 18628 9624 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:01:19,564 log 18628 9624 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:01:19,569 log 18628 9624 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:01:19,571 log 18628 9624 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:01:19,575 log 18628 9624 Bad Request: /api/auth/login/
+ERROR 2025-10-26 16:01:20,006 utils 18628 9624 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:01:20,018 utils 18628 9624 Audit log created: CREATE - User registered: rate_test_0
+ERROR 2025-10-26 16:01:20,329 utils 18628 9624 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:01:20,330 utils 18628 9624 Audit log created: CREATE - User registered: rate_test_1
+ERROR 2025-10-26 16:01:20,578 utils 18628 9624 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:01:20,579 utils 18628 9624 Audit log created: CREATE - User registered: rate_test_2
+ERROR 2025-10-26 16:01:20,821 utils 18628 9624 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:01:20,821 utils 18628 9624 Audit log created: CREATE - User registered: rate_test_3
+ERROR 2025-10-26 16:01:21,094 utils 18628 9624 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:01:21,095 utils 18628 9624 Audit log created: CREATE - User registered: rate_test_4
+ERROR 2025-10-26 16:01:21,344 utils 18628 9624 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:01:21,345 utils 18628 9624 Audit log created: CREATE - User registered: rate_test_5
+ERROR 2025-10-26 16:01:21,622 utils 18628 9624 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:01:21,625 utils 18628 9624 Audit log created: CREATE - User registered: rate_test_6
+ERROR 2025-10-26 16:01:21,880 utils 18628 9624 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:01:21,881 utils 18628 9624 Audit log created: CREATE - User registered: rate_test_7
+ERROR 2025-10-26 16:01:22,271 utils 18628 9624 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:01:22,274 utils 18628 9624 Audit log created: CREATE - User registered: rate_test_8
+WARNING 2025-10-26 16:01:22,286 log 18628 9624 Bad Request: /api/auth/register/
+ERROR 2025-10-26 16:01:35,189 utils 8636 27044 SSN encryption failed: ['Invalid SSN number']
+ERROR 2025-10-26 16:01:52,739 utils 28180 22520 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:01:52,746 utils 28180 22520 Audit log created: CREATE - User registered: rate_test_0
+ERROR 2025-10-26 16:01:53,028 utils 28180 22520 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:01:53,029 utils 28180 22520 Audit log created: CREATE - User registered: rate_test_1
+ERROR 2025-10-26 16:01:53,333 utils 28180 22520 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:01:53,334 utils 28180 22520 Audit log created: CREATE - User registered: rate_test_2
+ERROR 2025-10-26 16:01:53,601 utils 28180 22520 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:01:53,602 utils 28180 22520 Audit log created: CREATE - User registered: rate_test_3
+ERROR 2025-10-26 16:01:53,900 utils 28180 22520 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:01:53,901 utils 28180 22520 Audit log created: CREATE - User registered: rate_test_4
+ERROR 2025-10-26 16:01:54,168 utils 28180 22520 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:01:54,169 utils 28180 22520 Audit log created: CREATE - User registered: rate_test_5
+ERROR 2025-10-26 16:01:54,458 utils 28180 22520 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:01:54,458 utils 28180 22520 Audit log created: CREATE - User registered: rate_test_6
+ERROR 2025-10-26 16:01:54,738 utils 28180 22520 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:01:54,739 utils 28180 22520 Audit log created: CREATE - User registered: rate_test_7
+ERROR 2025-10-26 16:01:55,005 utils 28180 22520 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:01:55,006 utils 28180 22520 Audit log created: CREATE - User registered: rate_test_8
+WARNING 2025-10-26 16:01:55,015 log 28180 22520 Bad Request: /api/auth/register/
+INFO 2025-10-26 16:03:40,425 strategy 6564 23900 Task registration.tasks.monitor_system_health[dd5fd30f-4820-450a-834f-e43cdd16e29c] received
+ERROR 2025-10-26 16:03:40,473 request 6564 25380 Task handler raised error: ValueError('not enough values to unpack (expected 3, got 0)')
+billiard.einfo.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+WARNING 2025-10-26 16:04:06,836 log 20980 20808 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:04:06,851 log 20980 20808 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:04:06,858 log 20980 20808 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:04:06,860 log 20980 20808 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:04:06,862 log 20980 20808 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:04:06,865 log 20980 20808 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:04:06,871 log 20980 20808 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:04:06,877 log 20980 20808 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:04:06,880 log 20980 20808 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:04:06,883 log 20980 20808 Bad Request: /api/auth/login/
+ERROR 2025-10-26 16:04:07,208 utils 20980 20808 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:04:07,214 utils 20980 20808 Audit log created: CREATE - User registered: rate_test_0
+ERROR 2025-10-26 16:04:07,430 utils 20980 20808 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:04:07,432 utils 20980 20808 Audit log created: CREATE - User registered: rate_test_1
+ERROR 2025-10-26 16:04:07,641 utils 20980 20808 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:04:07,642 utils 20980 20808 Audit log created: CREATE - User registered: rate_test_2
+ERROR 2025-10-26 16:04:07,852 utils 20980 20808 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:04:07,854 utils 20980 20808 Audit log created: CREATE - User registered: rate_test_3
+ERROR 2025-10-26 16:04:08,063 utils 20980 20808 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:04:08,064 utils 20980 20808 Audit log created: CREATE - User registered: rate_test_4
+ERROR 2025-10-26 16:04:08,276 utils 20980 20808 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:04:08,277 utils 20980 20808 Audit log created: CREATE - User registered: rate_test_5
+ERROR 2025-10-26 16:04:08,502 utils 20980 20808 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:04:08,503 utils 20980 20808 Audit log created: CREATE - User registered: rate_test_6
+ERROR 2025-10-26 16:04:08,712 utils 20980 20808 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:04:08,713 utils 20980 20808 Audit log created: CREATE - User registered: rate_test_7
+ERROR 2025-10-26 16:04:08,940 utils 20980 20808 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:04:08,941 utils 20980 20808 Audit log created: CREATE - User registered: rate_test_8
+WARNING 2025-10-26 16:04:08,947 log 20980 20808 Bad Request: /api/auth/register/
+INFO 2025-10-26 16:04:52,781 autoreload 25760 27868 Watching for file changes with StatReloader
+WARNING 2025-10-26 16:05:15,193 log 25760 23744 Bad Request: /api/auth/register/
+WARNING 2025-10-26 16:06:59,167 log 25760 23744 Bad Request: /api/auth/register/
+INFO 2025-10-26 16:08:05,180 autoreload 26916 23744 Watching for file changes with StatReloader
+WARNING 2025-10-26 16:08:33,120 log 26916 21896 Bad Request: /api/auth/register/
+INFO 2025-10-26 16:08:40,505 strategy 6564 23900 Task registration.tasks.monitor_system_health[312d9a22-2c44-42d8-8ea1-182c8513504a] received
+ERROR 2025-10-26 16:08:40,531 request 6564 25380 Task handler raised error: ValueError('not enough values to unpack (expected 3, got 0)')
+billiard.einfo.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\billiard\pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\celery\app\trace.py", line 664, in fast_trace_task
+    tasks, accept, hostname = _loc
+ValueError: not enough values to unpack (expected 3, got 0)
+WARNING 2025-10-26 16:09:17,668 log 26916 21896 Bad Request: /api/auth/register/
+WARNING 2025-10-26 16:10:08,865 log 26916 21896 Bad Request: /api/auth/register/
+WARNING 2025-10-26 16:11:10,052 log 26916 21896 Bad Request: /api/auth/register/
+WARNING 2025-10-26 16:11:31,072 log 26916 21896 Bad Request: /api/auth/register/
+INFO 2025-10-26 16:13:33,782 autoreload 11128 25912 Watching for file changes with StatReloader
+WARNING 2025-10-26 16:13:38,721 log 11128 25088 Bad Request: /api/auth/register/
+WARNING 2025-10-26 16:14:11,154 log 11128 25088 Bad Request: /api/auth/register/
+INFO 2025-10-26 16:14:28,693 utils 11128 25088 Assigned CUSTOMER role to user smarak
+INFO 2025-10-26 16:14:28,698 utils 11128 25088 Audit log created: CREATE - User registered: smarak
+INFO 2025-10-26 16:15:59,140 autoreload 11128 25912 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\registration\utils.py changed, reloading.
+INFO 2025-10-26 16:16:02,788 autoreload 25972 27840 Watching for file changes with StatReloader
+INFO 2025-10-26 16:16:33,620 autoreload 25972 27840 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\smartbank\settings.py changed, reloading.
+INFO 2025-10-26 16:16:39,405 autoreload 28568 22452 Watching for file changes with StatReloader
+INFO 2025-10-26 16:17:12,212 autoreload 28568 22452 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\registration\utils.py changed, reloading.
+INFO 2025-10-26 16:17:14,481 autoreload 27888 19316 Watching for file changes with StatReloader
+INFO 2025-10-26 16:17:25,886 autoreload 27888 19316 C:\Users\Sakshi kumari\Documents\hclhackathon2025\smartbank\smartbank\settings.py changed, reloading.
+INFO 2025-10-26 16:17:28,271 autoreload 24304 26348 Watching for file changes with StatReloader
+INFO 2025-10-26 16:17:48,117 autoreload 26984 25120 Watching for file changes with StatReloader
+INFO 2025-10-26 16:18:57,455 utils 26984 23524 Assigned CUSTOMER role to user sakshi
+INFO 2025-10-26 16:18:57,458 utils 26984 23524 Audit log created: CREATE - User registered: sakshi
+WARNING 2025-10-26 16:23:18,844 log 17480 27952 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:23:18,854 log 17480 27952 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:23:18,857 log 17480 27952 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:23:18,859 log 17480 27952 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:23:18,862 log 17480 27952 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:23:18,868 log 17480 27952 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:23:18,870 log 17480 27952 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:23:18,872 log 17480 27952 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:23:18,875 log 17480 27952 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:23:18,877 log 17480 27952 Bad Request: /api/auth/login/
+ERROR 2025-10-26 16:23:19,149 utils 17480 27952 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:23:19,155 utils 17480 27952 Audit log created: CREATE - User registered: rate_test_0
+ERROR 2025-10-26 16:23:19,372 utils 17480 27952 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:23:19,373 utils 17480 27952 Audit log created: CREATE - User registered: rate_test_1
+ERROR 2025-10-26 16:23:19,588 utils 17480 27952 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:23:19,589 utils 17480 27952 Audit log created: CREATE - User registered: rate_test_2
+ERROR 2025-10-26 16:23:19,801 utils 17480 27952 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:23:19,802 utils 17480 27952 Audit log created: CREATE - User registered: rate_test_3
+ERROR 2025-10-26 16:23:20,004 utils 17480 27952 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:23:20,005 utils 17480 27952 Audit log created: CREATE - User registered: rate_test_4
+ERROR 2025-10-26 16:23:20,264 utils 17480 27952 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:23:20,265 utils 17480 27952 Audit log created: CREATE - User registered: rate_test_5
+ERROR 2025-10-26 16:23:20,499 utils 17480 27952 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:23:20,500 utils 17480 27952 Audit log created: CREATE - User registered: rate_test_6
+ERROR 2025-10-26 16:23:20,745 utils 17480 27952 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:23:20,748 utils 17480 27952 Audit log created: CREATE - User registered: rate_test_7
+ERROR 2025-10-26 16:23:20,974 utils 17480 27952 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:23:20,975 utils 17480 27952 Audit log created: CREATE - User registered: rate_test_8
+WARNING 2025-10-26 16:23:20,984 log 17480 27952 Bad Request: /api/auth/register/
+INFO 2025-10-26 16:24:31,641 tasks 24324 27868 Celery test task executed successfully
+INFO 2025-10-26 16:24:42,030 tasks 24324 27868 Celery test task executed successfully
+WARNING 2025-10-26 16:24:57,077 log 23120 3988 Bad Request: /api/admin/kyc/review/1/
+WARNING 2025-10-26 16:24:58,673 log 23120 3988 Forbidden: /api/admin/dashboard/stats/
+INFO 2025-10-26 16:24:59,801 utils 23120 3988 Audit log created: DOCUMENT_UPLOAD - Uploaded GOVERNMENT_ID document
+WARNING 2025-10-26 16:25:00,368 log 23120 3988 Unauthorized: /api/profile/
+WARNING 2025-10-26 16:25:00,370 log 23120 3988 Unauthorized: /api/admin/users/
+WARNING 2025-10-26 16:25:01,387 utils 23120 3988 Security event logged: FAILED_LOGIN - Failed login attempt for user existinguser
+WARNING 2025-10-26 16:25:01,388 log 23120 3988 Bad Request: /api/auth/login/
+INFO 2025-10-26 16:25:02,220 utils 23120 3988 Audit log created: LOGIN - User logged in: existinguser
+INFO 2025-10-26 16:25:03,222 utils 23120 3988 Audit log created: UPDATE - User profile updated: existinguser
+WARNING 2025-10-26 16:25:04,247 log 23120 3988 Bad Request: /api/auth/register/
+WARNING 2025-10-26 16:25:04,797 log 23120 3988 Bad Request: /api/auth/register/
+WARNING 2025-10-26 16:25:04,802 log 23120 3988 Bad Request: /api/auth/register/
+INFO 2025-10-26 16:25:05,212 tasks 23120 3988 Cleanup completed: 1 rate limits, 0 notifications
+INFO 2025-10-26 16:25:05,755 utils 23120 3988 Admin notification sent: NEW_REGISTRATION
+INFO 2025-10-26 16:25:05,847 tasks 23120 3988 Admin notification sent for new registration: testuser
+INFO 2025-10-26 16:25:06,208 tasks 23120 3988 KYC approval email sent to user: testuser
+INFO 2025-10-26 16:25:06,668 utils 23120 3988 Audit log created: CREATE - Test audit log
+ERROR 2025-10-26 16:25:07,241 utils 23120 3988 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:25:07,244 utils 23120 3988 Audit log created: CREATE - User registered: newuser
+INFO 2025-10-26 16:25:07,533 utils 23120 3988 Audit log created: LOGIN - User logged in: newuser
+INFO 2025-10-26 16:25:07,553 utils 23120 3988 Audit log created: DOCUMENT_UPLOAD - Uploaded GOVERNMENT_ID document
+WARNING 2025-10-26 16:25:07,814 utils 23120 3988 Security event logged: FAILED_LOGIN - Test security event
+WARNING 2025-10-26 16:25:09,955 log 23120 3988 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:25:09,959 log 23120 3988 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:25:09,963 log 23120 3988 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:25:09,965 log 23120 3988 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:25:09,967 log 23120 3988 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:25:09,969 log 23120 3988 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:25:09,971 log 23120 3988 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:25:09,972 log 23120 3988 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:25:09,978 log 23120 3988 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:25:09,980 log 23120 3988 Bad Request: /api/auth/login/
+ERROR 2025-10-26 16:25:10,247 utils 23120 3988 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:25:10,249 utils 23120 3988 Audit log created: CREATE - User registered: rate_test_0
+ERROR 2025-10-26 16:25:10,515 utils 23120 3988 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:25:10,516 utils 23120 3988 Audit log created: CREATE - User registered: rate_test_1
+ERROR 2025-10-26 16:25:10,766 utils 23120 3988 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:25:10,767 utils 23120 3988 Audit log created: CREATE - User registered: rate_test_2
+ERROR 2025-10-26 16:25:11,039 utils 23120 3988 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:25:11,042 utils 23120 3988 Audit log created: CREATE - User registered: rate_test_3
+ERROR 2025-10-26 16:25:11,292 utils 23120 3988 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:25:11,294 utils 23120 3988 Audit log created: CREATE - User registered: rate_test_4
+ERROR 2025-10-26 16:25:11,666 utils 23120 3988 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:25:11,667 utils 23120 3988 Audit log created: CREATE - User registered: rate_test_5
+ERROR 2025-10-26 16:25:12,055 utils 23120 3988 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:25:12,056 utils 23120 3988 Audit log created: CREATE - User registered: rate_test_6
+ERROR 2025-10-26 16:25:12,356 utils 23120 3988 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:25:12,359 utils 23120 3988 Audit log created: CREATE - User registered: rate_test_7
+ERROR 2025-10-26 16:25:12,620 utils 23120 3988 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:25:12,620 utils 23120 3988 Audit log created: CREATE - User registered: rate_test_8
+WARNING 2025-10-26 16:25:12,630 log 23120 3988 Bad Request: /api/auth/register/
+WARNING 2025-10-26 16:25:12,701 log 23120 3988 Method Not Allowed: /api/auth/register/
+WARNING 2025-10-26 16:25:12,703 log 23120 3988 Method Not Allowed: /api/auth/register/
+WARNING 2025-10-26 16:25:12,704 log 23120 3988 Method Not Allowed: /api/auth/register/
+ERROR 2025-10-26 16:25:12,870 utils 23120 3988 SSN encryption failed: ['Invalid SSN number']
+ERROR 2025-10-26 16:25:12,871 utils 23120 3988 SSN encryption failed: ['Invalid SSN number']
+ERROR 2025-10-26 16:25:13,796 utils 23120 3988 SSN encryption failed: ['Invalid SSN number']
+WARNING 2025-10-26 16:26:37,699 log 1480 24236 Bad Request: /api/admin/kyc/review/1/
+WARNING 2025-10-26 16:26:39,140 log 1480 24236 Forbidden: /api/admin/dashboard/stats/
+INFO 2025-10-26 16:26:40,143 utils 1480 24236 Audit log created: DOCUMENT_UPLOAD - Uploaded GOVERNMENT_ID document
+WARNING 2025-10-26 16:26:40,619 log 1480 24236 Unauthorized: /api/profile/
+WARNING 2025-10-26 16:26:40,620 log 1480 24236 Unauthorized: /api/admin/users/
+WARNING 2025-10-26 16:26:41,353 utils 1480 24236 Security event logged: FAILED_LOGIN - Failed login attempt for user existinguser
+WARNING 2025-10-26 16:26:41,354 log 1480 24236 Bad Request: /api/auth/login/
+INFO 2025-10-26 16:26:42,295 utils 1480 24236 Audit log created: LOGIN - User logged in: existinguser
+INFO 2025-10-26 16:26:43,250 utils 1480 24236 Audit log created: UPDATE - User profile updated: existinguser
+WARNING 2025-10-26 16:26:43,747 log 1480 24236 Bad Request: /api/auth/register/
+WARNING 2025-10-26 16:26:44,207 log 1480 24236 Bad Request: /api/auth/register/
+WARNING 2025-10-26 16:26:44,216 log 1480 24236 Bad Request: /api/auth/register/
+INFO 2025-10-26 16:26:44,567 tasks 1480 24236 Cleanup completed: 1 rate limits, 0 notifications
+INFO 2025-10-26 16:26:45,080 utils 1480 24236 Admin notification sent: NEW_REGISTRATION
+INFO 2025-10-26 16:26:45,163 tasks 1480 24236 Admin notification sent for new registration: testuser
+INFO 2025-10-26 16:26:45,413 tasks 1480 24236 KYC approval email sent to user: testuser
+INFO 2025-10-26 16:26:45,706 utils 1480 24236 Audit log created: CREATE - Test audit log
+ERROR 2025-10-26 16:26:46,186 utils 1480 24236 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:26:46,187 utils 1480 24236 Audit log created: CREATE - User registered: newuser
+INFO 2025-10-26 16:26:46,440 utils 1480 24236 Audit log created: LOGIN - User logged in: newuser
+INFO 2025-10-26 16:26:46,465 utils 1480 24236 Audit log created: DOCUMENT_UPLOAD - Uploaded GOVERNMENT_ID document
+WARNING 2025-10-26 16:26:46,867 utils 1480 24236 Security event logged: FAILED_LOGIN - Test security event
+WARNING 2025-10-26 16:26:48,856 log 1480 24236 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:26:48,862 log 1480 24236 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:26:48,865 log 1480 24236 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:26:48,867 log 1480 24236 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:26:48,870 log 1480 24236 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:26:48,873 log 1480 24236 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:26:48,878 log 1480 24236 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:26:48,881 log 1480 24236 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:26:48,885 log 1480 24236 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:26:48,887 log 1480 24236 Bad Request: /api/auth/login/
+ERROR 2025-10-26 16:26:49,129 utils 1480 24236 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:26:49,131 utils 1480 24236 Audit log created: CREATE - User registered: rate_test_0
+ERROR 2025-10-26 16:26:49,381 utils 1480 24236 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:26:49,382 utils 1480 24236 Audit log created: CREATE - User registered: rate_test_1
+ERROR 2025-10-26 16:26:49,629 utils 1480 24236 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:26:49,630 utils 1480 24236 Audit log created: CREATE - User registered: rate_test_2
+ERROR 2025-10-26 16:26:49,880 utils 1480 24236 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:26:49,881 utils 1480 24236 Audit log created: CREATE - User registered: rate_test_3
+ERROR 2025-10-26 16:26:50,138 utils 1480 24236 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:26:50,139 utils 1480 24236 Audit log created: CREATE - User registered: rate_test_4
+ERROR 2025-10-26 16:26:50,423 utils 1480 24236 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:26:50,426 utils 1480 24236 Audit log created: CREATE - User registered: rate_test_5
+ERROR 2025-10-26 16:26:50,662 utils 1480 24236 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:26:50,663 utils 1480 24236 Audit log created: CREATE - User registered: rate_test_6
+ERROR 2025-10-26 16:26:50,884 utils 1480 24236 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:26:50,886 utils 1480 24236 Audit log created: CREATE - User registered: rate_test_7
+ERROR 2025-10-26 16:26:51,111 utils 1480 24236 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:26:51,112 utils 1480 24236 Audit log created: CREATE - User registered: rate_test_8
+WARNING 2025-10-26 16:26:51,122 log 1480 24236 Bad Request: /api/auth/register/
+WARNING 2025-10-26 16:26:51,187 log 1480 24236 Method Not Allowed: /api/auth/register/
+WARNING 2025-10-26 16:26:51,192 log 1480 24236 Method Not Allowed: /api/auth/register/
+WARNING 2025-10-26 16:26:51,194 log 1480 24236 Method Not Allowed: /api/auth/register/
+ERROR 2025-10-26 16:26:51,354 utils 1480 24236 SSN encryption failed: ['Invalid SSN number']
+ERROR 2025-10-26 16:26:51,356 utils 1480 24236 SSN encryption failed: ['Invalid SSN number']
+ERROR 2025-10-26 16:26:52,266 utils 1480 24236 SSN encryption failed: ['Invalid SSN number']
+WARNING 2025-10-26 16:28:13,777 log 24912 26320 Bad Request: /api/admin/kyc/review/1/
+WARNING 2025-10-26 16:28:15,592 log 24912 26320 Forbidden: /api/admin/dashboard/stats/
+INFO 2025-10-26 16:28:16,485 utils 24912 26320 Audit log created: DOCUMENT_UPLOAD - Uploaded GOVERNMENT_ID document
+WARNING 2025-10-26 16:28:16,969 log 24912 26320 Unauthorized: /api/profile/
+WARNING 2025-10-26 16:28:16,985 log 24912 26320 Unauthorized: /api/admin/users/
+WARNING 2025-10-26 16:28:17,837 utils 24912 26320 Security event logged: FAILED_LOGIN - Failed login attempt for user existinguser
+WARNING 2025-10-26 16:28:17,838 log 24912 26320 Bad Request: /api/auth/login/
+INFO 2025-10-26 16:28:18,656 utils 24912 26320 Audit log created: LOGIN - User logged in: existinguser
+INFO 2025-10-26 16:28:19,704 utils 24912 26320 Audit log created: UPDATE - User profile updated: existinguser
+WARNING 2025-10-26 16:28:20,158 log 24912 26320 Bad Request: /api/auth/register/
+WARNING 2025-10-26 16:28:20,618 log 24912 26320 Bad Request: /api/auth/register/
+WARNING 2025-10-26 16:28:20,625 log 24912 26320 Bad Request: /api/auth/register/
+INFO 2025-10-26 16:28:20,923 tasks 24912 26320 Cleanup completed: 1 rate limits, 0 notifications
+INFO 2025-10-26 16:28:21,345 utils 24912 26320 Admin notification sent: NEW_REGISTRATION
+INFO 2025-10-26 16:28:21,426 tasks 24912 26320 Admin notification sent for new registration: testuser
+INFO 2025-10-26 16:28:21,636 tasks 24912 26320 KYC approval email sent to user: testuser
+INFO 2025-10-26 16:28:21,893 utils 24912 26320 Audit log created: CREATE - Test audit log
+ERROR 2025-10-26 16:28:22,370 utils 24912 26320 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:28:22,372 utils 24912 26320 Audit log created: CREATE - User registered: newuser
+INFO 2025-10-26 16:28:22,683 utils 24912 26320 Audit log created: LOGIN - User logged in: newuser
+INFO 2025-10-26 16:28:22,718 utils 24912 26320 Audit log created: DOCUMENT_UPLOAD - Uploaded GOVERNMENT_ID document
+WARNING 2025-10-26 16:28:23,167 utils 24912 26320 Security event logged: FAILED_LOGIN - Test security event
+WARNING 2025-10-26 16:28:25,170 log 24912 26320 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:28:25,173 log 24912 26320 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:28:25,177 log 24912 26320 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:28:25,180 log 24912 26320 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:28:25,183 log 24912 26320 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:28:25,186 log 24912 26320 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:28:25,189 log 24912 26320 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:28:25,195 log 24912 26320 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:28:25,200 log 24912 26320 Bad Request: /api/auth/login/
+WARNING 2025-10-26 16:28:25,204 log 24912 26320 Bad Request: /api/auth/login/
+ERROR 2025-10-26 16:28:25,418 utils 24912 26320 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:28:25,421 utils 24912 26320 Audit log created: CREATE - User registered: rate_test_0
+ERROR 2025-10-26 16:28:25,629 utils 24912 26320 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:28:25,630 utils 24912 26320 Audit log created: CREATE - User registered: rate_test_1
+ERROR 2025-10-26 16:28:25,831 utils 24912 26320 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:28:25,832 utils 24912 26320 Audit log created: CREATE - User registered: rate_test_2
+ERROR 2025-10-26 16:28:26,043 utils 24912 26320 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:28:26,044 utils 24912 26320 Audit log created: CREATE - User registered: rate_test_3
+ERROR 2025-10-26 16:28:26,246 utils 24912 26320 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:28:26,247 utils 24912 26320 Audit log created: CREATE - User registered: rate_test_4
+ERROR 2025-10-26 16:28:26,448 utils 24912 26320 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:28:26,449 utils 24912 26320 Audit log created: CREATE - User registered: rate_test_5
+ERROR 2025-10-26 16:28:26,654 utils 24912 26320 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:28:26,655 utils 24912 26320 Audit log created: CREATE - User registered: rate_test_6
+ERROR 2025-10-26 16:28:26,860 utils 24912 26320 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:28:26,861 utils 24912 26320 Audit log created: CREATE - User registered: rate_test_7
+ERROR 2025-10-26 16:28:27,074 utils 24912 26320 CUSTOMER role not found. Please run get_or_create_roles() first.
+INFO 2025-10-26 16:28:27,075 utils 24912 26320 Audit log created: CREATE - User registered: rate_test_8
+WARNING 2025-10-26 16:28:27,084 log 24912 26320 Bad Request: /api/auth/register/
+WARNING 2025-10-26 16:28:27,147 log 24912 26320 Method Not Allowed: /api/auth/register/
+WARNING 2025-10-26 16:28:27,150 log 24912 26320 Method Not Allowed: /api/auth/register/
+WARNING 2025-10-26 16:28:27,151 log 24912 26320 Method Not Allowed: /api/auth/register/
+ERROR 2025-10-26 16:28:27,280 utils 24912 26320 SSN encryption failed: ['Invalid SSN number']
+ERROR 2025-10-26 16:28:27,281 utils 24912 26320 SSN encryption failed: ['Invalid SSN number']
+ERROR 2025-10-26 16:28:27,944 utils 24912 26320 SSN encryption failed: ['Invalid SSN number']
