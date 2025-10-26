@@ -1,4 +1,6 @@
 # Core Banking System - User Registration & KYC
+<img width="645" height="131" alt="image" src="https://github.com/user-attachments/assets/067235e6-e4af-49f6-b4ae-7cb572d7acd7" />
+
 
 A comprehensive banking application built with Django REST Framework implementing secure user registration, KYC verification, and role-based access control.
 
