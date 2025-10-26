@@ -261,10 +261,97 @@ Authorization: Bearer <access_token>
 
 **Note:** Sensitive fields (SSN, address) cannot be updated via API for security reasons.
 
+### KYC Document Endpoints
+
+#### 5. Upload KYC Document
+**Endpoint:** `POST /api/kyc/upload/`
+
+**Description:** Upload KYC verification documents
+
+**Headers:**
+```
+Authorization: Bearer <access_token>
+Content-Type: multipart/form-data
+```
+
+**Request Body (Form Data):**
+```
+document_type: GOVERNMENT_ID
+document_number: ABC123456789
+document_file: [file upload]
+```
+
+**Supported Document Types:**
+- `GOVERNMENT_ID` - Government issued ID
+- `PASSPORT` - Passport
+- `DRIVER_LICENSE` - Driver's License
+- `UTILITY_BILL` - Utility Bill
+- `BANK_STATEMENT` - Bank Statement
+- `OTHER` - Other documents
+
+**Success Response (201 Created):**
+```json
+{
+  "id": 1,
+  "document_type": "GOVERNMENT_ID",
+  "document_number": "ABC123456789",
+  "upload_date": "2024-01-15T10:30:00Z",
+  "verification_status": "PENDING",
+  "message": "Document uploaded successfully"
+}
+```
+
+**Error Response (400 Bad Request):**
+```json
+{
+  "document_type": ["You have already uploaded a Government Id document. Document ID: 1, Status: PENDING. Please select a different document type or contact support if you need to replace it."],
+  "document_number": ["Document number 'ABC123456789' has already been used by another user. Please verify your document number or contact support if you believe this is an error."]
+}
+```
+
+**Validation Rules:**
+- File size: Maximum 10MB
+- File types: PDF, JPG, JPEG, PNG
+- Document number: Must be unique across all users
+- Document type: Cannot upload same type twice per user
+- User KYC status: Must be INCOMPLETE, PENDING, or REJECTED
+
+#### 6. List KYC Documents
+**Endpoint:** `GET /api/kyc/documents/`
+
+**Description:** List user's uploaded KYC documents
+
+**Headers:**
+```
+Authorization: Bearer <access_token>
+```
+
+**Success Response (200 OK):**
+```json
+{
+  "count": 2,
+  "results": [
+    {
+      "id": 1,
+      "document_type": "GOVERNMENT_ID",
+      "document_number": "ABC123456789",
+      "upload_date": "2024-01-15T10:30:00Z",
+      "verification_status": "PENDING"
+    },
+    {
+      "id": 2,
+      "document_type": "UTILITY_BILL",
+      "document_number": "UTIL987654321",
+      "upload_date": "2024-01-15T11:00:00Z",
+      "verification_status": "VERIFIED"
+    }
+  ]
+}
+```
 
 ### Admin Endpoints (Bank Admin Only)
 
-#### 5. Update KYC Status
+#### 7. Update KYC Status
 **Endpoint:** `PUT /api/users/{user_id}/` (Admin Only)
 
 **Description:** Update user's KYC status
@@ -281,7 +368,7 @@ Authorization: Bearer <access_token>
 - `APPROVED` - Verified and approved
 - `REJECTED` - Rejected with reason
 
-#### 6. List Fraud Alerts
+#### 8. List Fraud Alerts
 **Endpoint:** `GET /api/fraud-alerts/`
 
 **Description:** View fraud alerts (Bank Staff Only)
@@ -312,7 +399,7 @@ Authorization: Bearer <admin_access_token>
 
 ### Audit Log Endpoints (Auditor Access)
 
-#### 7. View Audit Logs
+#### 9. View Audit Logs
 **Endpoint:** `GET /api/audit-logs/`
 
 **Description:** Access audit trail (Auditor & Admin Only)
@@ -965,6 +1052,12 @@ curl -X POST http://localhost:8000/api/kyc/upload/ \
   -F "document_type=GOVERNMENT_ID" \
   -F "document_number=ABC123456" \
   -F "document_file=@/path/to/document.pdf"
+```
+
+### 5. List KYC Documents
+```bash
+curl -X GET http://localhost:8000/api/kyc/documents/ \
+  -H "Authorization: Bearer YOUR_ACCESS_TOKEN"
 ```
 
 ## 📝 KYC Process Summary
