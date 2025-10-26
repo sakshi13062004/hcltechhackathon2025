@@ -167,7 +167,7 @@ REST_FRAMEWORK = {
     ],
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 20,
-    'EXCEPTION_HANDLER': 'registration.utils.custom_exception_handler',
+    # 'EXCEPTION_HANDLER': 'registration.utils.custom_exception_handler',  # Temporarily disabled
     'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
 }
 
@@ -269,29 +269,37 @@ CORS_ALLOWED_ORIGINS = [
 
 CORS_ALLOW_CREDENTIALS = True
 
-# Rate Limiting Settings
-RATE_LIMIT_SETTINGS = {
-    'REGISTRATION': {
-        'requests': 15,       # Increased from 3 to 10 attempts
-        'window': 3600,       # 1 hour window
-        'lockout': 300,       # Reduced lockout to 5 minutes (300 seconds)
-    },
-    'LOGIN': {
-        'requests': 5,
-        'window': 60,  # 1 minute
-        'lockout': 1800,  # 30 minutes
-    },
-    'KYC_UPLOAD': {
-        'requests': 10,
-        'window': 300,  # 5 minutes
-        'lockout': 0,
-    },
-    'API_GENERAL': {
-        'requests': 100,
-        'window': 3600,  # 1 hour
-        'lockout': 0,
-    }
-}
+# Rate Limiting Settings - DISABLED
+# Set to True to enable rate limiting
+DISABLE_RATE_LIMITING = True
+
+# Rate limiting is currently disabled
+# Uncomment the settings below to re-enable rate limiting
+# RATE_LIMIT_SETTINGS = {
+#     'REGISTRATION': {
+#         'requests': 25,       # Increased from 3 to 10 attempts
+#         'window': 3600,       # 1 hour window
+#         'lockout': 300,       # Reduced lockout to 5 minutes (300 seconds)
+#     },
+#     'LOGIN': {
+#         'requests': 5,
+#         'window': 60,  # 1 minute
+#         'lockout': 1800,  # 30 minutes
+#     },
+#     'KYC_UPLOAD': {
+#         'requests': 10,
+#         'window': 300,  # 5 minutes
+#         'lockout': 0,
+#     },
+#     'API_GENERAL': {
+#         'requests': 100,
+#         'window': 3600,  # 1 hour
+#         'lockout': 0,
+#     }
+# }
+
+# Empty rate limit settings when disabled
+RATE_LIMIT_SETTINGS = {}
 
 # Encryption Keys
 # Generate proper Fernet keys if not provided in environment

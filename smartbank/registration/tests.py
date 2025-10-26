@@ -16,7 +16,7 @@ from unittest.mock import patch, MagicMock
 
 from .models import User, Role, UserRole, KYCDocument, AuditLog, SecurityEvent, Notification
 from .utils import EncryptionService, ValidationService, SecurityService, AuditService
-from .serializers import UserRegistrationSerializer
+from .serializers import UserRegistrationSerializer, KYCDocumentSerializer
 
 User = get_user_model()
 
@@ -719,6 +719,266 @@ class RateLimitTests(TestCase):
                 self.assertIn('X-RateLimit-Limit', response)
                 self.assertIn('X-RateLimit-Remaining', response)
                 self.assertIn('X-RateLimit-Reset', response)
+
+
+class ValidationTests(TestCase):
+    """Test cases for enhanced validation logic"""
+    
+    def setUp(self):
+        """Set up test data"""
+        self.encryption_service = EncryptionService()
+        self.validation_service = ValidationService()
+    
+    def test_ssn_duplicate_prevention(self):
+        """Test SSN duplicate prevention"""
+        # Create first user with SSN
+        user1 = User.objects.create_user(
+            username='user1',
+            email='user1@example.com',
+            password='TestPass123!',
+            first_name='User',
+            last_name='One',
+            phone_number='+1234567890',
+            date_of_birth=date(1990, 1, 1),
+            ssn_encrypted=self.encryption_service.encrypt_ssn('123-45-6789'),
+            address_encrypted='encrypted_address'
+        )
+        
+        # Try to create second user with same SSN
+        user2_data = {
+            'username': 'user2',
+            'email': 'user2@example.com',
+            'password': 'TestPass123!',
+            'confirm_password': 'TestPass123!',
+            'first_name': 'User',
+            'last_name': 'Two',
+            'phone_number': '+1234567891',
+            'date_of_birth': '1990-01-01',
+            'ssn': '123-45-6789',  # Same SSN
+            'address': '123 Test St'
+        }
+        
+        serializer = UserRegistrationSerializer(data=user2_data)
+        self.assertFalse(serializer.is_valid())
+        self.assertIn('ssn', serializer.errors)
+        self.assertIn('already exists', str(serializer.errors['ssn']))
+    
+    def test_enhanced_validation_messages(self):
+        """Test enhanced validation error messages"""
+        # Test invalid email format
+        data = {
+            'username': 'testuser',
+            'email': 'invalid-email',
+            'password': 'TestPass123!',
+            'confirm_password': 'TestPass123!',
+            'first_name': 'Test',
+            'last_name': 'User',
+            'phone_number': '+1234567890',
+            'date_of_birth': '1990-01-01',
+            'ssn': '123-45-6789',
+            'address': '123 Test St'
+        }
+        
+        serializer = UserRegistrationSerializer(data=data)
+        self.assertFalse(serializer.is_valid())
+        self.assertIn('email', serializer.errors)
+        self.assertIn('valid email', str(serializer.errors['email']))
+        
+        # Test weak password
+        data['email'] = 'test@example.com'
+        data['password'] = 'weak'
+        data['confirm_password'] = 'weak'
+        
+        serializer = UserRegistrationSerializer(data=data)
+        self.assertFalse(serializer.is_valid())
+        self.assertIn('password', serializer.errors)
+        self.assertIn('uppercase', str(serializer.errors['password']))
+    
+    def test_kyc_document_validation(self):
+        """Test KYC document validation"""
+        user = User.objects.create_user(
+            username='kycuser',
+            email='kyc@example.com',
+            password='TestPass123!',
+            first_name='KYC',
+            last_name='User',
+            phone_number='+1234567890',
+            date_of_birth=date(1990, 1, 1),
+            ssn_encrypted='encrypted_ssn',
+            address_encrypted='encrypted_address'
+        )
+        
+        # Mock request context
+        class MockRequest:
+            def __init__(self, user):
+                self.user = user
+                self.META = {'REMOTE_ADDR': '127.0.0.1'}
+        
+        mock_request = MockRequest(user)
+        
+        # Test invalid file type
+        invalid_data = {
+            'document_type': 'GOVERNMENT_ID',
+            'document_number': 'ABC123456',
+            'document_file': SimpleUploadedFile(
+                "test.txt",
+                b"test content",
+                content_type="text/plain"
+            )
+        }
+        
+        serializer = KYCDocumentSerializer(
+            data=invalid_data,
+            context={'request': mock_request}
+        )
+        self.assertFalse(serializer.is_valid())
+        self.assertIn('document_file', serializer.errors)
+        self.assertIn('not supported', str(serializer.errors['document_file']))
+        
+        # Test duplicate document type
+        KYCDocument.objects.create(
+            user=user,
+            document_type='GOVERNMENT_ID',
+            document_number='EXISTING123',
+            document_file_path='test_path',
+            file_hash='test_hash',
+            file_size=1024
+        )
+        
+        valid_data = {
+            'document_type': 'GOVERNMENT_ID',  # Duplicate type
+            'document_number': 'NEW123456',
+            'document_file': SimpleUploadedFile(
+                "test.pdf",
+                b"test content",
+                content_type="application/pdf"
+            )
+        }
+        
+        serializer = KYCDocumentSerializer(
+            data=valid_data,
+            context={'request': mock_request}
+        )
+        self.assertFalse(serializer.is_valid())
+        self.assertIn('document_type', serializer.errors)
+        self.assertIn('already uploaded', str(serializer.errors['document_type']))
+    
+    def test_document_number_duplicate_prevention(self):
+        """Test document number duplicate prevention across users"""
+        user1 = User.objects.create_user(
+            username='user1',
+            email='user1@example.com',
+            password='TestPass123!',
+            first_name='User',
+            last_name='One',
+            phone_number='+1234567890',
+            date_of_birth=date(1990, 1, 1),
+            ssn_encrypted='encrypted_ssn1',
+            address_encrypted='encrypted_address1'
+        )
+        
+        user2 = User.objects.create_user(
+            username='user2',
+            email='user2@example.com',
+            password='TestPass123!',
+            first_name='User',
+            last_name='Two',
+            phone_number='+1234567891',
+            date_of_birth=date(1990, 1, 1),
+            ssn_encrypted='encrypted_ssn2',
+            address_encrypted='encrypted_address2'
+        )
+        
+        # Create KYC document for user1
+        KYCDocument.objects.create(
+            user=user1,
+            document_type='PASSPORT',
+            document_number='DOC123456',
+            document_file_path='test_path',
+            file_hash='test_hash',
+            file_size=1024,
+            verification_status='PENDING'
+        )
+        
+        # Try to create KYC document for user2 with same document number
+        class MockRequest:
+            def __init__(self, user):
+                self.user = user
+                self.META = {'REMOTE_ADDR': '127.0.0.1'}
+        
+        mock_request = MockRequest(user2)
+        
+        duplicate_data = {
+            'document_type': 'GOVERNMENT_ID',
+            'document_number': 'DOC123456',  # Same document number
+            'document_file': SimpleUploadedFile(
+                "test.pdf",
+                b"test content",
+                content_type="application/pdf"
+            )
+        }
+        
+        serializer = KYCDocumentSerializer(
+            data=duplicate_data,
+            context={'request': mock_request}
+        )
+        self.assertFalse(serializer.is_valid())
+        self.assertIn('document_number', serializer.errors)
+        self.assertIn('already been used', str(serializer.errors['document_number']))
+
+
+class RateLimitDisabledTests(TestCase):
+    """Test cases for rate limiting being disabled"""
+    
+    def setUp(self):
+        """Set up test data"""
+        self.client = APIClient()
+    
+    def test_rate_limiting_disabled(self):
+        """Test that rate limiting is disabled"""
+        # Make multiple rapid requests to registration endpoint
+        for i in range(10):
+            data = {
+                'username': f'rate_test_{i}',
+                'email': f'rate_test_{i}@example.com',
+                'password': 'TestPass123!',
+                'confirm_password': 'TestPass123!',
+                'first_name': 'Rate',
+                'last_name': 'Test',
+                'phone_number': f'+123456789{i}',
+                'date_of_birth': '1990-01-01',
+                'ssn': f'123-45-678{i}',
+                'address': '123 Test St'
+            }
+            
+            response = self.client.post('/api/auth/register/', data)
+            
+            # Should not get rate limited (429 status)
+            self.assertNotEqual(response.status_code, 429, 
+                              f"Rate limiting is still enabled! Got 429 on request {i+1}")
+            
+            # Should get either success (201) or validation error (400)
+            self.assertIn(response.status_code, [201, 400], 
+                         f"Unexpected status code {response.status_code} on request {i+1}")
+    
+    def test_login_rate_limiting_disabled(self):
+        """Test that login rate limiting is disabled"""
+        # Make multiple rapid login requests with invalid credentials
+        for i in range(10):
+            data = {
+                'username': 'nonexistent_user',
+                'password': 'wrong_password'
+            }
+            
+            response = self.client.post('/api/auth/login/', data)
+            
+            # Should not get rate limited (429 status)
+            self.assertNotEqual(response.status_code, 429, 
+                              f"Login rate limiting is still enabled! Got 429 on request {i+1}")
+            
+            # Should get authentication error (401) or validation error (400)
+            self.assertIn(response.status_code, [401, 400], 
+                         f"Unexpected status code {response.status_code} on request {i+1}")
 
 
 class CeleryTaskTests(TestCase):

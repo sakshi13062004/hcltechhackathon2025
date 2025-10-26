@@ -14,69 +14,82 @@ class RateLimitMiddleware(MiddlewareMixin):
     """Rate limiting middleware"""
     
     def process_request(self, request):
-        """Process request for rate limiting"""
-        try:
-            # Get rate limit configuration
-            rate_limit_config = self._get_rate_limit_config(request.path)
-            
-            if not rate_limit_config:
-                return None  # No rate limiting for this endpoint
-            
-            # Get client identifier
-            identifier = self._get_client_identifier(request)
-            
-            # Check rate limit with error handling
-            try:
-                allowed, message = RateLimitService.check_rate_limit(
-                    identifier, request.path, rate_limit_config
-                )
-            except Exception as e:
-                logger.error(f"Rate limit check failed: {e}")
-                # If rate limiting fails, allow the request to proceed
-                # This prevents Redis issues from blocking legitimate requests
-                allowed = True
-                message = "Rate limit check failed, allowing request"
-            
-            if not allowed:
-                # Log security event
-                AuditService.log_security_event(
-                    event_type='RATE_LIMIT_EXCEEDED',
-                    description=f"Rate limit exceeded for {request.path}",
-                    request=request,
-                    severity='MEDIUM',
-                    metadata={
-                        'endpoint': request.path,
-                        'identifier': identifier,
-                        'limit': rate_limit_config['requests'],
-                        'window': rate_limit_config['window']
-                    }
-                )
-                
-                return JsonResponse({
-                    'error': True,
-                    'message': message,
-                    'retry_after': rate_limit_config['window']
-                }, status=429)
-            
-            # Add rate limit headers to response
-            request.rate_limit_info = RateLimitService.get_rate_limit_info(
-                identifier, request.path, rate_limit_config
-            )
-            
+        """Process request for rate limiting - DISABLED"""
+        # Check if rate limiting is disabled in settings
+        if getattr(settings, 'DISABLE_RATE_LIMITING', False):
             return None
-            
-        except Exception as e:
-            logger.error(f"Rate limit middleware error: {e}")
-            # Allow request if rate limiting fails
-            return None
+        
+        # Rate limiting is currently disabled
+        # Uncomment the code below to re-enable rate limiting
+        
+        # try:
+        #     # Get rate limit configuration
+        #     rate_limit_config = self._get_rate_limit_config(request.path)
+        #     
+        #     if not rate_limit_config:
+        #         return None  # No rate limiting for this endpoint
+        #     
+        #     # Get client identifier
+        #     identifier = self._get_client_identifier(request)
+        #     
+        #     # Check rate limit with error handling
+        #     try:
+        #         allowed, message = RateLimitService.check_rate_limit(
+        #             identifier, request.path, rate_limit_config
+        #         )
+        #     except Exception as e:
+        #         logger.error(f"Rate limit check failed: {e}")
+        #         # If rate limiting fails, allow the request to proceed
+        #         # This prevents Redis issues from blocking legitimate requests
+        #         allowed = True
+        #         message = "Rate limit check failed, allowing request"
+        #     
+        #     if not allowed:
+        #         # Log security event
+        #         AuditService.log_security_event(
+        #             event_type='RATE_LIMIT_EXCEEDED',
+        #             description=f"Rate limit exceeded for {request.path}",
+        #             request=request,
+        #             severity='MEDIUM',
+        #             metadata={
+        #                 'endpoint': request.path,
+        #                 'identifier': identifier,
+        #                 'limit': rate_limit_config['requests'],
+        #                 'window': rate_limit_config['window']
+        #             }
+        #         )
+        #         
+        #         return JsonResponse({
+        #             'error': True,
+        #             'message': message,
+        #             'retry_after': rate_limit_config['window']
+        #         }, status=429)
+        #     
+        #     # Add rate limit headers to response
+        #     request.rate_limit_info = RateLimitService.get_rate_limit_info(
+        #         identifier, request.path, rate_limit_config
+        #     )
+        #     
+        #     return None
+        #     
+        # except Exception as e:
+        #     logger.error(f"Rate limit middleware error: {e}")
+        #     # Allow request if rate limiting fails
+        #     return None
+        
+        # Rate limiting disabled - allow all requests
+        return None
     
     def process_response(self, request, response):
-        """Add rate limit headers to response"""
-        if hasattr(request, 'rate_limit_info'):
-            rate_info = request.rate_limit_info
-            response['X-RateLimit-Limit'] = rate_info['limit']
-            response['X-RateLimit-Remaining'] = rate_info['remaining']
-            response['X-RateLimit-Reset'] = rate_info['reset_time']
+        """Add rate limit headers to response - DISABLED"""
+        # Rate limiting is currently disabled
+        # Uncomment the code below to re-enable rate limit headers
+        
+        # if hasattr(request, 'rate_limit_info'):
+        #     rate_info = request.rate_limit_info
+        #     response['X-RateLimit-Limit'] = rate_info['limit']
+        #     response['X-RateLimit-Remaining'] = rate_info['remaining']
+        #     response['X-RateLimit-Reset'] = rate_info['reset_time']
         
         return response
     

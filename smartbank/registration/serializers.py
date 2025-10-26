@@ -227,9 +227,10 @@ class UserRegistrationSerializer(serializers.ModelSerializer):
         try:
             encryption_service = EncryptionService()
             if encryption_service.check_duplicate_ssn(attrs['ssn']):
-                errors['ssn'] = "A user with this SSN already exists."
+                errors['ssn'] = "A user with this Social Security Number already exists. Please check your SSN or contact support if you believe this is an error."
         except Exception as e:
-            errors['ssn'] = "Unable to verify SSN. Please try again."
+            logger.error(f"SSN duplicate check error: {e}")
+            errors['ssn'] = "Unable to verify SSN at this time. Please try again later or contact support."
         
         if errors:
             raise serializers.ValidationError(errors)
@@ -503,19 +504,35 @@ class KYCDocumentSerializer(serializers.ModelSerializer):
                 user=user,
                 document_type=document_type,
                 verification_status__in=['PENDING', 'APPROVED']
-            ).exists()
+            ).first()
             
             if existing_doc:
+                doc_type_display = document_type.replace('_', ' ').title()
                 errors['document_type'] = (
-                    f"You have already uploaded a {document_type.replace('_', ' ').lower()} document. "
+                    f"You have already uploaded a {doc_type_display} document. "
+                    f"Document ID: {existing_doc.id}, Status: {existing_doc.verification_status}. "
                     f"Please select a different document type or contact support if you need to replace it."
+                )
+        
+        # Check for duplicate document number
+        document_number = attrs.get('document_number')
+        if document_number:
+            existing_doc_number = KYCDocument.objects.filter(
+                document_number=document_number,
+                verification_status__in=['PENDING', 'VERIFIED']
+            ).exclude(user=user).exists()
+            
+            if existing_doc_number:
+                errors['document_number'] = (
+                    f"Document number '{document_number}' has already been used by another user. "
+                    f"Please verify your document number or contact support if you believe this is an error."
                 )
         
         # Check user's KYC status
         if user.kyc_status not in ['INCOMPLETE', 'PENDING', 'REJECTED']:
             errors['non_field_errors'] = [
                 "KYC documents can only be uploaded for incomplete, pending, or rejected applications. "
-                f"Your current status is: {user.kyc_status}"
+                f"Your current status is: {user.kyc_status}. Please contact support if you need assistance."
             ]
         
         if errors:

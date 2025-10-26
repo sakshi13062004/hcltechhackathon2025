@@ -396,7 +396,7 @@ class RateLimitService:
 def custom_exception_handler(exc, context):
     """Custom exception handler for DRF"""
     from rest_framework.views import exception_handler
-    from rest_framework.exceptions import AuthenticationFailed, NotAuthenticated
+    from rest_framework.exceptions import AuthenticationFailed, NotAuthenticated, ValidationError
     
     response = exception_handler(exc, context)
     
@@ -410,6 +410,10 @@ def custom_exception_handler(exc, context):
             }
             response.data = custom_response_data
             # Keep the original status code (401) for auth errors
+        elif isinstance(exc, ValidationError):
+            # For validation errors, return the original data without wrapping
+            # This preserves the correct 400 status code and error format
+            return response
         else:
             custom_response_data = {
                 'error': True,
