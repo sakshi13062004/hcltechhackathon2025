@@ -266,7 +266,11 @@ Authorization: Bearer <access_token>
 #### 5. Upload KYC Document
 **Endpoint:** `POST /api/kyc/upload/`
 
-**Description:** Upload KYC verification documents
+**Description:** Upload KYC verification documents for identity verification
+
+**Authentication:** Required (JWT Bearer Token)
+
+**Content-Type:** `multipart/form-data` (for file uploads)
 
 **Headers:**
 ```
@@ -274,47 +278,168 @@ Authorization: Bearer <access_token>
 Content-Type: multipart/form-data
 ```
 
-**Request Body (Form Data):**
-```
-document_type: GOVERNMENT_ID
-document_number: ABC123456789
-document_file: [file upload]
-```
+**Request Body (Form Data Fields):**
+
+| Field Name | Type | Required | Description | Example |
+|------------|------|----------|-------------|---------|
+| `document_type` | String | ✅ Yes | Type of document being uploaded | `GOVERNMENT_ID` |
+| `document_number` | String | ✅ Yes | Unique document identifier | `ABC123456789` |
+| `document_file` | File | ✅ Yes | The actual document file | `@/path/to/document.pdf` |
 
 **Supported Document Types:**
-- `GOVERNMENT_ID` - Government issued ID
-- `PASSPORT` - Passport
-- `DRIVER_LICENSE` - Driver's License
-- `UTILITY_BILL` - Utility Bill
-- `BANK_STATEMENT` - Bank Statement
-- `OTHER` - Other documents
+- `GOVERNMENT_ID` - Government issued ID (Driver's License, State ID, etc.)
+- `PASSPORT` - International Passport
+- `DRIVER_LICENSE` - Driver's License (separate from Government ID)
+- `UTILITY_BILL` - Utility Bill (Electricity, Water, Gas, Internet)
+- `BANK_STATEMENT` - Bank Statement (last 3 months)
+- `OTHER` - Other supporting documents
+
+**File Upload Requirements:**
+- **Maximum File Size:** 10MB
+- **Supported Formats:** PDF, JPG, JPEG, PNG
+- **File Naming:** No special characters, descriptive names recommended
+- **File Quality:** Clear, readable, not password-protected
+
+**Example Request (cURL):**
+```bash
+curl -X POST http://localhost:8000/api/kyc/upload/ \
+  -H "Authorization: Bearer YOUR_ACCESS_TOKEN" \
+  -F "document_type=GOVERNMENT_ID" \
+  -F "document_number=DL123456789" \
+  -F "document_file=@/path/to/drivers_license.pdf"
+```
+
+**Example Request (Postman/API Client):**
+```
+Method: POST
+URL: http://localhost:8000/api/kyc/upload/
+Headers:
+  Authorization: Bearer YOUR_ACCESS_TOKEN
+Body (form-data):
+  document_type: GOVERNMENT_ID
+  document_number: 876
+  document_file: [Select File] c:\Users\Sakshi kumari\Downloads\GS 3 QUESTION 2013-2025.pdf
+```
 
 **Success Response (201 Created):**
 ```json
 {
   "id": 1,
   "document_type": "GOVERNMENT_ID",
-  "document_number": "ABC123456789",
+  "document_number": "DL123456789",
   "upload_date": "2024-01-15T10:30:00Z",
   "verification_status": "PENDING",
-  "message": "Document uploaded successfully"
+  "file_size": "2.5MB",
+  "file_hash": "sha256:abc123def456...",
+  "message": "Document uploaded successfully. It will be reviewed within 24-48 hours."
 }
 ```
 
-**Error Response (400 Bad Request):**
+**Error Response (400 Bad Request) - Validation Errors:**
 ```json
 {
-  "document_type": ["You have already uploaded a Government Id document. Document ID: 1, Status: PENDING. Please select a different document type or contact support if you need to replace it."],
-  "document_number": ["Document number 'ABC123456789' has already been used by another user. Please verify your document number or contact support if you believe this is an error."]
+  "document_type": [
+    "You have already uploaded a Government Id document. Document ID: 1, Status: PENDING. Please select a different document type or contact support if you need to replace it."
+  ],
+  "document_number": [
+    "Document number 'DL123456789' has already been used by another user. Please verify your document number or contact support if you believe this is an error."
+  ],
+  "document_file": [
+    "File size exceeds maximum limit of 10MB.",
+    "File type not supported. Please upload PDF, JPG, JPEG, or PNG files only."
+  ]
 }
 ```
 
-**Validation Rules:**
-- File size: Maximum 10MB
-- File types: PDF, JPG, JPEG, PNG
-- Document number: Must be unique across all users
-- Document type: Cannot upload same type twice per user
-- User KYC status: Must be INCOMPLETE, PENDING, or REJECTED
+**Error Response (400 Bad Request) - KYC Status Error:**
+```json
+{
+  "non_field_errors": [
+    "KYC documents can only be uploaded for incomplete, pending, or rejected applications. Your current status is: APPROVED. Please contact support if you need assistance."
+  ]
+}
+```
+
+**Error Response (401 Unauthorized):**
+```json
+{
+  "detail": "Authentication credentials were not provided."
+}
+```
+
+**Error Response (413 Payload Too Large):**
+```json
+{
+  "error": "File too large. Maximum file size is 10MB."
+}
+```
+
+**Comprehensive Validation Rules:**
+
+1. **Authentication:**
+   - User must be logged in with valid JWT token
+   - Token must not be expired
+
+2. **User KYC Status:**
+   - User's KYC status must be: `INCOMPLETE`, `PENDING`, or `REJECTED`
+   - Cannot upload if status is `APPROVED`
+
+3. **Document Type:**
+   - Must be one of the supported document types
+   - Cannot upload the same document type twice per user
+   - Case-sensitive (use exact values from supported list)
+
+4. **Document Number:**
+   - Must be unique across all users in the system
+   - Cannot be empty or null
+   - Maximum length: 100 characters
+   - Alphanumeric characters recommended
+
+5. **File Requirements:**
+   - **Size:** Maximum 10MB (10,485,760 bytes)
+   - **Formats:** PDF, JPG, JPEG, PNG only
+   - **Quality:** Must be readable and clear
+   - **Security:** File will be encrypted before storage
+
+6. **Business Rules:**
+   - Maximum 5 documents per user
+   - Each document type can only be uploaded once
+   - Document number must be unique system-wide
+   - File integrity is verified using SHA-256 hash
+
+**Security Features:**
+- ✅ **File Encryption:** All uploaded files are encrypted using Fernet encryption
+- ✅ **Hash Verification:** SHA-256 hash stored for file integrity
+- ✅ **Access Control:** Only authenticated users can upload
+- ✅ **Rate Limiting:** Prevents abuse (currently disabled)
+- ✅ **Audit Logging:** All uploads are logged for compliance
+- ✅ **Virus Scanning:** Files are scanned before processing (if configured)
+
+**Processing Flow:**
+1. **Validation:** Check authentication, file format, size, and business rules
+2. **Encryption:** Encrypt file content using Fernet encryption
+3. **Storage:** Save encrypted file to secure storage
+4. **Database:** Create KYC document record with metadata
+5. **Audit:** Log the upload action for compliance
+6. **Notification:** Notify admin for review (if Celery enabled)
+7. **Response:** Return success with document details
+
+**Admin Review Process:**
+- Documents are queued for admin review
+- Admin can approve, reject, or request additional documents
+- User receives email notification of status change
+- Rejected documents can be re-uploaded with corrections
+
+**Troubleshooting Common Issues:**
+
+| Issue | Cause | Solution |
+|-------|-------|----------|
+| 401 Unauthorized | Missing/invalid token | Login again and get new token |
+| 400 File too large | File > 10MB | Compress or resize file |
+| 400 Invalid file type | Wrong format | Convert to PDF/JPG/PNG |
+| 400 Duplicate document type | Already uploaded this type | Choose different document type |
+| 400 Duplicate document number | Number already exists | Verify document number |
+| 400 KYC status error | Status is APPROVED | Contact support |
 
 #### 6. List KYC Documents
 **Endpoint:** `GET /api/kyc/documents/`
