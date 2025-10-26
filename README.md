@@ -4,14 +4,6 @@ A comprehensive banking application built with Django REST Framework implementin
 
 ## 🎯 Overview
 
-This system provides a secure, scalable banking solution with three primary actor roles:
-
-### Actors/Roles
-
-1. **Customer** - Registers accounts, performs transactions, views statements
-2. **Bank Admin** - Approves loans, manages customer accounts, reviews flagged transactions
-3. **Auditor** - Accesses audit logs, reviews system activity
-
 ## 🔄 Use Case 1: User Registration and KYC
 
 ### Trigger
